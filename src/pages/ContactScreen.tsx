@@ -1,31 +1,13 @@
 import React, { useState } from 'react';
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    nom: '',
-    email: '',
-    sujet: '',
-    message: ''
-  });
-
   const [submitted, setSubmitted] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    // Construire un lien mailto avec les données du formulaire
-    const mailtoLink = `mailto:priamdavid@gmail.com?subject=${encodeURIComponent(formData.sujet)}&body=${encodeURIComponent(`De: ${formData.nom}\nEmail: ${formData.email}\n\n${formData.message}`)}`;
-    window.location.href = mailtoLink;
+    // Ne pas empêcher la soumission - laisser Formspree la gérer
     setSubmitted(true);
     setTimeout(() => {
       setSubmitted(false);
-      setFormData({ nom: '', email: '', sujet: '', message: '' });
     }, 3000);
   };
 
@@ -95,15 +77,18 @@ export default function Contact() {
               <i className="fas fa-paper-plane"></i>
               Envoyez un Message
             </h2>
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form 
+              action="https://formspree.io/f/mvzdwrld"
+              method="POST"
+              onSubmit={handleSubmit}
+              className="space-y-4"
+            >
               <div>
                 <label htmlFor="nom" className="block text-sm font-medium mb-2 text-gray-300">Votre Nom *</label>
                 <input
                   type="text"
                   id="nom"
                   name="nom"
-                  value={formData.nom}
-                  onChange={handleChange}
                   required
                   placeholder="Votre nom"
                   className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 focus:border-green-500 focus:outline-none transition text-white placeholder-gray-500"
@@ -116,8 +101,6 @@ export default function Contact() {
                   type="email"
                   id="email"
                   name="email"
-                  value={formData.email}
-                  onChange={handleChange}
                   required
                   placeholder="votre.email@example.com"
                   className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 focus:border-green-500 focus:outline-none transition text-white placeholder-gray-500"
@@ -130,8 +113,6 @@ export default function Contact() {
                   type="text"
                   id="sujet"
                   name="sujet"
-                  value={formData.sujet}
-                  onChange={handleChange}
                   required
                   placeholder="Quel est le sujet ?"
                   className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 focus:border-green-500 focus:outline-none transition text-white placeholder-gray-500"
@@ -143,8 +124,6 @@ export default function Contact() {
                 <textarea
                   id="message"
                   name="message"
-                  value={formData.message}
-                  onChange={handleChange}
                   required
                   placeholder="Votre message ici..."
                   rows={5}
