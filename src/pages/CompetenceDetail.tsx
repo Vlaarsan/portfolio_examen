@@ -46,20 +46,6 @@ export default function CompetenceDetail() {
               </div>
             </div>
           </div>
-          
-          {/* Barre de pourcentage */}
-          <div className="mt-6">
-            <div className="flex justify-between text-sm mb-2">
-              <span>Maîtrise</span>
-              <span className={`font-bold ${categoryColor.text}`}>{comp.pourcentage}%</span>
-            </div>
-            <div className="w-full bg-white/10 rounded-full h-4 overflow-hidden">
-              <div 
-                className={`${comp.categorie === 'technique' ? 'bg-gradient-to-r from-green-500 to-blue-600' : 'bg-gradient-to-r from-purple-500 to-pink-600'} h-full transition-all`}
-                style={{ width: `${comp.pourcentage}%` }}
-              ></div>
-            </div>
-          </div>
         </div>
 
         {/* Définition & Contexte */}

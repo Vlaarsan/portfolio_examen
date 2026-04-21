@@ -69,7 +69,7 @@ export default function Presentation() {
                 <br />
                 <strong>Moyen terme (2-3 ans):</strong> Leadership technique, mentorat d'autres développeurs.
                 <br />
-                <strong>Long terme:</strong> Entrepreneur ou architecte logiciel dans une grande tech company.
+                <strong>Long terme:</strong> Développeur sénior expert en React Native.
               </p>
             </div>
           </div>
@@ -181,7 +181,7 @@ export default function Presentation() {
             Je serais ravi de discuter de comment je peux contribuer à votre projet.
           </p>
           <a 
-            href="mailto:priamdavid@gmail.com"
+            href="/contact"
             className="inline-block mt-4 px-8 py-3 bg-gradient-to-r from-green-500 to-blue-600 rounded-lg font-semibold hover:scale-105 transition-transform"
           >
             Me contacter

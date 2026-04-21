@@ -62,22 +62,23 @@ export default function Parcours() {
     {
       titre: 'Animation 3D & Production Vidéo',
       lieu: 'Auto-formation',
-      annee: '2024',
+      annee: '2026',
       details: 'Production du film d\'animation "Le Codex d\'Orion" avec effets 3D professionnels. Apprentissage des outils de production vidéo et animation 3D.',
       icon: 'fas fa-film',
-      color: 'from-indigo-500 to-violet-600'
+      color: 'from-indigo-500 to-violet-600',
+      colorKey: 'indigo'
     },
   ];
 
-  // Combinaison et tri anti-chronologique
+  // Combinaison et tri chronologique (ancien au bas, récent au haut)
   const timeline = [
-    { ...experiences[0], index: 0 },
-    { ...formations[0], index: 1 },
-    { ...formations[1], index: 2 },
-    { ...experiences[1], index: 3 },
-    { ...formations[2], index: 4 },
-    { ...formations[3], index: 5 },
-    { ...experiences[2], index: 6 },
+    { ...experiences[2], index: 0, colorKey: 'blue' },
+    { ...formations[2], index: 1, colorKey: 'yellow' },
+    { ...experiences[1], index: 2, colorKey: 'green' },
+    { ...formations[1], index: 3, colorKey: 'orange' },
+    { ...formations[0], index: 4, colorKey: 'red' },
+    { ...formations[3], index: 5, colorKey: 'indigo' },
+    { ...experiences[0], index: 6, colorKey: 'purple' },
   ];
 
   return (
@@ -93,33 +94,46 @@ export default function Parcours() {
 
           {/* Événements */}
           <div className="space-y-12">
-            {timeline.map((item, index) => (
-              <div key={index} className={`flex items-center gap-8 ${index % 2 === 0 ? '' : 'flex-row-reverse'}`}>
-                {/* Contenu */}
-                <div className={`w-5/12 ${index % 2 === 0 ? '' : 'text-right'}`}>
-                  <div className={`bg-gradient-to-br ${item.color} bg-opacity-10 rounded-lg p-6 border border-white/10 hover:border-white/30 transition`}>
-                    <div className="flex items-start gap-3 mb-2">
-                      <i className={`${item.icon} text-2xl ${item.color?.includes('from-purple') ? 'text-purple-400' : item.color?.includes('from-green') ? 'text-green-400' : item.color?.includes('from-blue') ? 'text-blue-400' : item.color?.includes('from-red') ? 'text-red-400' : item.color?.includes('from-orange') ? 'text-orange-400' : item.color?.includes('from-yellow') ? 'text-yellow-400' : 'text-indigo-400'}`}></i>
-                      <div className={index % 2 !== 0 ? 'text-right' : ''}>
-                        <h3 className="text-lg font-semibold">{item.titre}</h3>
-                        <p className="text-sm opacity-70">{item.entreprise || item.lieu}</p>
+            {timeline.map((item, index) => {
+              const colorMap: {[key: string]: {bg: string, text: string}} = {
+                purple: { bg: 'from-purple-500 to-pink-600', text: 'text-purple-400' },
+                green: { bg: 'from-green-500 to-emerald-600', text: 'text-green-400' },
+                blue: { bg: 'from-blue-500 to-cyan-600', text: 'text-blue-400' },
+                red: { bg: 'from-red-500 to-rose-600', text: 'text-red-400' },
+                orange: { bg: 'from-orange-500 to-amber-600', text: 'text-orange-400' },
+                yellow: { bg: 'from-yellow-500 to-lime-600', text: 'text-yellow-400' },
+                indigo: { bg: 'from-indigo-500 to-violet-600', text: 'text-indigo-400' },
+              };
+              const colorKey = (item as any).colorKey || 'purple';
+              const colors = colorMap[colorKey];
+              return (
+                <div key={index} className={`flex items-center gap-8 ${index % 2 === 0 ? '' : 'flex-row-reverse'}`}>
+                  {/* Contenu */}
+                  <div className={`w-5/12 ${index % 2 === 0 ? '' : 'text-right'}`}>
+                    <div className={`bg-gradient-to-br ${colors.bg} bg-opacity-10 rounded-lg p-6 border border-white/10 hover:border-white/30 transition`}>
+                      <div className="flex items-start gap-3 mb-2">
+                        <i className={`${(item as any).icon} text-2xl ${colors.text}`}></i>
+                        <div className={index % 2 !== 0 ? 'text-right' : ''}>
+                          <h3 className="text-lg font-semibold">{(item as any).titre}</h3>
+                          <p className="text-sm opacity-70">{(item as any).entreprise || (item as any).lieu}</p>
+                        </div>
                       </div>
+                      <p className="text-xs opacity-60 mb-3">{(item as any).periode || (item as any).annee}</p>
+                      {(item as any).statut && <span className="inline-block text-xs px-2 py-1 bg-white/10 rounded-full mb-3">{(item as any).statut}</span>}
+                      <p className="text-sm opacity-80 leading-relaxed">{(item as any).description || (item as any).details}</p>
                     </div>
-                    <p className="text-xs opacity-60 mb-3">{item.periode || item.annee}</p>
-                    {item.statut && <span className="inline-block text-xs px-2 py-1 bg-white/10 rounded-full mb-3">{item.statut}</span>}
-                    <p className="text-sm opacity-80 leading-relaxed">{item.description || item.details}</p>
                   </div>
-                </div>
 
-                {/* Point central */}
-                <div className="w-2/12 flex justify-center">
-                  <div className="w-4 h-4 bg-gradient-to-r from-green-500 to-blue-600 rounded-full border-4 border-black shadow-lg"></div>
-                </div>
+                  {/* Point central */}
+                  <div className="w-2/12 flex justify-center">
+                    <div className="w-4 h-4 bg-gradient-to-r from-green-500 to-blue-600 rounded-full border-4 border-black shadow-lg"></div>
+                  </div>
 
-                {/* Espace vide */}
-                <div className="w-5/12"></div>
-              </div>
-            ))}
+                  {/* Espace vide */}
+                  <div className="w-5/12"></div>
+                </div>
+              );
+            })}
           </div>
         </div>
 

@@ -30,13 +30,6 @@ export default function Competences() {
                           <p className="text-sm opacity-60">{c.niveau}</p>
                         </div>
                       </div>
-                      <span className="text-lg font-bold text-green-400">{c.pourcentage}%</span>
-                    </div>
-                    <div className="w-full bg-white/10 rounded-full h-2 overflow-hidden">
-                      <div 
-                        className="bg-gradient-to-r from-green-500 to-blue-600 h-full"
-                        style={{ width: `${c.pourcentage}%` }}
-                      ></div>
                     </div>
                     <p className="text-xs opacity-60 mt-2">{c.description}</p>
                   </div>
@@ -59,17 +52,8 @@ export default function Competences() {
                     <i className={`${c.icon} text-3xl text-purple-400`}></i>
                     <div className="flex-1">
                       <h2 className="text-2xl font-semibold">{c.nom}</h2>
-                      <div className="flex items-center justify-between">
-                        <p className="text-sm opacity-70">Niveau: <span className="text-purple-400 font-semibold">{c.niveau}</span></p>
-                        <span className="text-sm font-bold text-purple-400">{c.pourcentage}%</span>
-                      </div>
+                      <p className="text-sm opacity-70">Niveau: <span className="text-purple-400 font-semibold">{c.niveau}</span></p>
                     </div>
-                  </div>
-                  <div className="w-full bg-white/10 rounded-full h-2 overflow-hidden mb-3">
-                    <div 
-                      className="bg-gradient-to-r from-purple-500 to-pink-600 h-full"
-                      style={{ width: `${c.pourcentage}%` }}
-                    ></div>
                   </div>
                   <p className="text-sm opacity-80">{c.description}</p>
                 </div>
