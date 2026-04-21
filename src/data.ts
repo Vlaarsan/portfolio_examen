@@ -40,7 +40,7 @@ export interface Realisation {
   enjeux: string[]; // Enjeux
   risques: string[]; // Risques rencontrés
   etapes: string[]; // Étapes du projet
-  acteurs: string[]; // Qui a travaillé dessus
+  acteurs: string; // Qui a travaillé dessus
   resultats: string; // Résultats obtenus
   regardCritique: string; // Regard critique/autocritique
 }
@@ -152,7 +152,7 @@ export const competences: Competence[] = [
       projetLien: "Développer un 2e jeu avec des mécaniques plus complexes",
       formations: ["UE5 Advanced AI", "Advanced Game Optimization", "Unreal Networking"]
     },
-    realisations: ["saga-cube"],
+    realisations: ["saga-cube", "codex-orion"],
     icon: "fas fa-gamepad",
   },
   {
@@ -460,13 +460,13 @@ export const realisations: Realisation[] = [
       "Testing et déploiement APK",
       "Lancement et support utilisateurs"
     ],
-    acteurs: "Équipe CodeFlow (2 devs), designer UX, client, communauté bêta de 50+ testeurs",
-    resultats: "Application publiée avec 500+ utilisateurs, 4.5★ sur Google Play, communauté active. Monétisation en cours d'étude.",
+    acteurs: "Solo (David PRIAM)",
+    resultats: "Belle expérience, m'a permis d'acquérir des compétences techniques et de gestion de projet. Application que j'ai présenté lors de ma soutenance pour mon diplôme de concepteur développeur d'application.",
     regardCritique: "Belle réussite ! Points d'amélioration: meilleure modération des événements, système de notation plus robuste, fonctionnalités sociales plus riches.",
     competences: ["react-native", "typescript", "javascript", "firebase"],
     github: "https://github.com/Vlaarsan/DogoutV2",
     youtube: "https://www.youtube.com/watch?v=BxgXHbYNEgc&t=4s",
-    image: "https://via.placeholder.com/400x300?text=Dogout",
+    image: "https://github.com/Vlaarsan/Portfolio/blob/main/img/Logo%20Dogout.png?raw=true",
   },
   {
     id: "saga-cube",
@@ -492,8 +492,8 @@ export const realisations: Realisation[] = [
       "Acceptation sur Steam (processus de review strict)"
     ],
     etapes: [
-      "Apprentissage Unreal Engine 5 (2 mois)",
-      "Design des 15+ niveaux et énigmes",
+      "Apprentissage Unreal Engine 5",
+      "Design des niveaux et énigmes",
       "Modélisation 3D et assets",
       "Programmation en C++ et Blueprints",
       "Level design et balancing",
@@ -501,14 +501,14 @@ export const realisations: Realisation[] = [
       "Soumission et approval Steam",
       "Lancement et support post-launch"
     ],
-    acteurs: "Solo (David PRIAM), avec feedback bêta de 50+ testeurs",
-    resultats: "Jeu publié sur Steam, 200+ avis positifs, revenus modérés, communauté engagée. Continuées mises à jour.",
+    acteurs: "Solo (David PRIAM) avec l'aide d'Angélique Goussault pour la conception, le level design ainsi que les tests.",
+    resultats: "Jeu publié sur Steam, plusieurs avis positifs, revenus modérés.",
     regardCritique: "Première expérience game dev concluante ! Points forts: conception unique, esthétique cohérente. À améliorer: tutoriel meilleur, difficulté progressive, plus d'énigmes.",
     competences: ["unreal-engine"],
     youtube: "https://www.youtube.com/watch?v=8Lf3NEA9M64",
     steam: "https://store.steampowered.com/app/2148080/Saga_Cube",
     lien: "https://store.steampowered.com/app/2148080/Saga_Cube",
-    image: "https://via.placeholder.com/400x300?text=Saga+Cube",
+    image: "https://github.com/Vlaarsan/Portfolio/blob/main/img/Logo%20Saga%20Cube.png?raw=true",
   },
   {
     id: "kodafit",
@@ -518,14 +518,14 @@ export const realisations: Realisation[] = [
     definition: "Plateforme de coaching fitness mobile avec exercices, plans d'entraînement, suivi de progression et communauté.",
     objectifs: [
       "Créer une app fitness complète et utilisable",
-      "Offrir 60+ exercices avec vidéos et descriptions",
-      "Permettre le tracking personnalisé des entraînements"
+      "Offrir une grande variété d'exercices avec vidéos et descriptions",
+      "Permettre le suivi des entraînements"
     ],
     contexte: "Projet personnel de 3 mois. Apprentissage approfondi de React Native. Réponse à un besoin personnel et de marché.",
     enjeux: [
       "Créer une base de données d'exercices comprehensive",
       "Assurer la performance avec beaucoup de contenu",
-      "Engagement utilisateurs pour rétention"
+      "Garantir une bonne expérience utilisateur"
     ],
     risques: [
       "Concurrence féroce dans le fitness",
@@ -536,23 +536,23 @@ export const realisations: Realisation[] = [
       "Conception UX pour user experience fluide",
       "Architecture Redux pour gestion d'état complexe",
       "Intégration Firebase pour backend",
-      "Création de 60+ fiches exercices",
+      "Création de 200 fiches exercices",
       "Développement du système de plans d'entraînement",
       "Testing et optimisation de performance",
       "Déploiement et support communauté"
     ],
-    acteurs: "Solo (David PRIAM), avec retours bêta de 100+ fitness enthusiasts",
-    resultats: "1000+ téléchargements, 4.3★ avis. Communauté active avec suggestions régulières. Monétisation via publicités.",
+    acteurs: "Solo (David PRIAM)",
+    resultats: "Une application fonctionnelle avec une base de données d'exercices complète. Expérience précieuse en développement mobile et gestion de projet. Application que j'utilise régulièrement.",
     regardCritique: "Bon produit avec base solide ! Améliorations possibles: personnalisation IA des plans, intégration fitness trackers, version web.",
     competences: ["react-native", "typescript", "javascript", "firebase"],
     github: "https://github.com/Vlaarsan/Kodafit",
-    image: "https://via.placeholder.com/400x300?text=Kodafit",
+    image: "https://github.com/Vlaarsan/Portfolio/blob/main/img/Kodafit.png?raw=true",
   },
   {
     id: "codex-orion",
     nom: "Le Codex d'Orion",
     description: "Court-métrage d'animation 3D avec effets professionnels et narration visuelle.",
-    presentation: "Film d'animation 3D de 5 minutes mettant en scène un héros en costume qui infiltre un musée pour récupérer une relique mystérieuse.",
+    presentation: "Film d'animation 3D de 1 minutes 30 secondes mettant en scène un héros en costume qui infiltre un musée pour récupérer une relique mystérieuse.",
     definition: "Court-métrage cinématographique explorant animation 3D, compositing et narration visuelle. Production et réalisation complète.",
     objectifs: [
       "Créer un film d'animation de qualité professionnelle",
@@ -561,31 +561,31 @@ export const realisations: Realisation[] = [
     ],
     contexte: "Projet créatif personnel. Exploration de la production vidéo et animation 3D au-delà du code.",
     enjeux: [
-      "Maîtriser les outils 3D complexes (Blender, After Effects)",
+      "Maîtriser les outils 3D complexes (Unreal Engine, After Effects, Davinci Resolve)",
       "Créer des animations fluides et réalistes",
-      "Raconter une histoire sans dialogues"
+      "Donner de l'émotion à l'histoire"
     ],
     risques: [
       "Courbe d'apprentissage 3D très élevée",
       "Temps de rendering excessif",
-      "Complexité narrative sans dialogues"
+      "Complexité narrative"
     ],
     etapes: [
       "Concept art et storyboarding",
       "Modélisation 3D des personnages et décors",
       "Texturing et rigging",
-      "Animation des séquences (3 mois)",
+      "Animation des séquences",
       "Lighting et rendering",
       "Compositing et color grading",
       "Sound design et musique",
       "Post-production et export final"
     ],
-    acteurs: "Solo (David PRIAM), avec mentoring d'artistes 3D",
-    resultats: "Film de 5min terminé, 50K+ vues sur YouTube, reconnaissance dans communauté création. Prix à un concours local.",
+    acteurs: "Solo (David PRIAM)",
+    resultats: "Film de 1min 30s terminé, posté sur YouTube, fierté de mon travail. Expérience précieuse en production vidéo et animation 3D.",
     regardCritique: "Belle exploration créative ! Points positifs: cinematography innovante, animation fluide. À améliorer: scénario plus complexe, dialogues.",
-    competences: ["animation"],
+    competences: ["unreal-engine", "rigueur","autonomie","creativite"],
     youtube: "https://www.youtube.com/watch?v=Zy9kU0NkdmY",
-    image: "https://via.placeholder.com/400x300?text=Codex+d%27Orion",
+    image: "https://github.com/Vlaarsan/Portfolio/blob/main/img/Miniature%20Codex%20d'Orion%202mo.png?raw=true",
   },
   {
     id: "site-pspe",
@@ -619,13 +619,13 @@ export const realisations: Realisation[] = [
       "Déploiement GitHub Pages",
       "Formation client et documentation"
     ],
-    acteurs: "Solo (David PRIAM), designer freelance externe, client PSPE",
-    resultats: "Site live depuis 2022, 500+ visites mensuelles, 20+ leads générés, client satisfait. Avis positif client.",
+    acteurs: "Solo (David PRIAM)",
+    resultats: "Site crée depuis 2022, Avis positif client.",
     regardCritique: "Site fonctionnel et attractif. Améliorations possibles: animation plus avancées, blog section, analytics détaillé.",
-    competences: ["react", "html-css", "typescript", "javascript", "git"],
+    competences: ["react", "html-css", "typescript", "javascript", "git", "communication", "rigueur", "autonomie"],
     github: "https://github.com/Vlaarsan/Site-PSPE",
     lien: "https://vlaar93.github.io/Site_Sid",
-    image: "https://via.placeholder.com/400x300?text=Site+PSPE",
+    image: "https://github.com/Vlaarsan/Portfolio/blob/main/img/handshake.jpg?raw=true",
   },
   {
     id: "cuistoResto",
@@ -638,7 +638,7 @@ export const realisations: Realisation[] = [
       "Offrir une large base de recettes variées",
       "Simplifier la planification culinaire"
     ],
-    contexte: "Projet personnel de 2 mois. Continuation des apprentissages React Native.",
+    contexte: "Projet personnel. Continuation des apprentissages React Native.",
     enjeux: [
       "Différenciation dans marché saturé",
       "Base recettes pertinente et à jour",
@@ -652,17 +652,16 @@ export const realisations: Realisation[] = [
     etapes: [
       "Conception interface simple et agréable",
       "Intégration API recettes externes",
-      "Système de favoris avec SQLite local",
+      "Système de favoris",
       "Développement page détail recettes",
       "Search et filtrage avancés",
       "Testing et optimisation",
-      "Déploiement Google Play"
     ],
-    acteurs: "Solo (David PRIAM), avec testeurs culinaires amateurs",
-    resultats: "500+ téléchargements, utilisation régulière de la base utilisateurs. Feedback positif sur UX.",
-    regardCritique: "Good MVP culinaire ! À développer: recettes plus premium, planification de menus complète, intégration listes courses.",
-    competences: ["react-native", "javascript"],
+    acteurs: "Solo (David PRIAM)",
+    resultats: "Work in progress",
+    regardCritique: "Work in progress, belle base posée ! Points à travailler: différenciation (ex: recettes personnalisées), UX plus fluide, contenu plus riche.",
+    competences: ["react-native", "javascript", "typescript", "firebase", "creativite", "rigueur", "autonomie"],
     github: "https://github.com/Vlaarsan/CuistoResto",
-    image: "https://via.placeholder.com/400x300?text=CuistotResto",
+    image: "https://t3.ftcdn.net/jpg/03/05/40/20/360_F_305402093_Xjwbp9xAfRElg7vD6eOAOe8BcYRLOqal.jpg",
   },
 ];

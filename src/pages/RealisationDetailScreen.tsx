@@ -37,12 +37,12 @@ export default function RealisationDetail() {
           </div>
         )}
         
-        <h1 className="text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-600">{proj.nom}</h1>
+        <h1 className="text-5xl font-bold mb-6 pb-2 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-600">{proj.nom}</h1>
         
         {/* Liens directs vers GitHub, YouTube, Steam et démo */}
-        <div className="flex flex-wrap gap-4 mb-12">
+        <div className="flex flex-wrap gap-4 mb-12 mt-4">
           {proj.github && (
-            <a 
+            <a
               href={proj.github} 
               target="_blank" 
               rel="noopener noreferrer"

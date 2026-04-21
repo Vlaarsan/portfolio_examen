@@ -6,7 +6,7 @@ export default function Home() {
       <div className="mb-8">
         <div className="w-40 h-40 mx-auto mb-6 rounded-full bg-gradient-to-br from-green-500 to-blue-600 flex items-center justify-center border-4 border-white/20 shadow-2xl overflow-hidden">
           <img 
-            src="https://via.placeholder.com/400?text=Votre+Photo" 
+            src="https://github.com/Vlaarsan/Portfolio/blob/main/img/PP4.jpg?raw=true" 
             alt="David PRIAM" 
             className="w-full h-full object-cover"
           />
