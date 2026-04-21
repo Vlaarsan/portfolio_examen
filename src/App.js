@@ -2,14 +2,14 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar.tsx';
-import Home from './pages/Home.tsx';
-import Presentation from './pages/Presentation.tsx';
-import Competences from './pages/Competences.tsx';
+import Home from './pages/HomeScreen.tsx';
+import Presentation from './pages/PresentationScreen.tsx';
+import Competences from './pages/CompetencesScreen.tsx';
 import CompetenceDetail from './pages/CompetenceDetail.tsx';
-import Realisations from './pages/Realisations.tsx';
-import RealisationDetail from './pages/RealisationDetail.tsx';
-import Parcours from './pages/Parcours.tsx';
-import Contact from './pages/Contact.tsx';
+import Realisations from './pages/RealisationsScreen.tsx';
+import RealisationDetail from './pages/RealisationDetailScreen.tsx';
+import Parcours from './pages/ParcoursScreen.tsx';
+import Contact from './pages/ContactScreen.tsx';
 
 function App() {
   return (
