@@ -24,7 +24,7 @@ export default function CompetenceDetail() {
     : { bg: 'from-purple-500/10 to-pink-600/10', text: 'text-purple-400', border: 'border-purple-500/30' };
 
   return (
-    <div className="min-h-screen bg-black pt-24 pb-16">
+    <div className="min-h-screen bg-transparent pt-24 pb-16">
       <div className="max-w-4xl mx-auto p-10 text-white">
         <Link to="/competences" className="text-green-400 hover:text-green-300 transition mb-6 inline-flex items-center gap-2">
           <i className="fas fa-arrow-left"></i> Retour aux compétences

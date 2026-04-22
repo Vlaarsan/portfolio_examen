@@ -1,3 +1,28 @@
+.app-background {
+  background: linear-gradient(135deg, #0a0a0a 0%, #0f0f1e 50%, #0a0a14 100%);
+  background-attachment: fixed;
+  position: relative;
+}
+
+.app-background::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(34, 197, 94, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.app-background > * {
+  position: relative;
+  z-index: 1;
+}
+
 .App {
   text-align: center;
 }

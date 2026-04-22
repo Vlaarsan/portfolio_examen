@@ -12,7 +12,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-black pt-24 pb-16">
+    <div className="min-h-screen bg-transparent pt-24 pb-16">
       <div className="max-w-4xl mx-auto p-10 text-white">
         <h1 className="text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-600">Me Contacter</h1>
         <p className="text-lg opacity-70 mb-12">N'hésitez pas à me contacter pour discuter de projets, collaborations ou toute autre opportunité !</p>
@@ -65,7 +65,7 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="font-semibold text-lg text-orange-300 mb-1">Disponibilité</h3>
-                <p className="opacity-70">Ouvert à nouvelles opportunités</p>
+                <p className="opacity-70">Actuellement en contrat chez TF1 mais reste ouvert à des échanges autour de projets intéressants, collaborations ou opportunités futures.</p>
                 <p className="text-sm opacity-60 mt-1">Réponses généralement dans les 24-48h</p>
               </div>
             </div>
@@ -163,12 +163,7 @@ export default function Contact() {
             <a href="https://www.youtube.com/@TheVlaar93/videos" target="_blank" rel="noopener noreferrer" className="p-4 rounded-lg bg-red-500/20 border border-red-500/40 hover:bg-red-500/30 transition">
               <i className="fab fa-youtube text-2xl text-red-300"></i>
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="p-4 rounded-lg bg-blue-400/20 border border-blue-400/40 hover:bg-blue-400/30 transition">
-              <i className="fab fa-twitter text-2xl text-blue-200"></i>
-            </a>
-            <a href="https://discord.com" target="_blank" rel="noopener noreferrer" className="p-4 rounded-lg bg-purple-600/20 border border-purple-600/40 hover:bg-purple-600/30 transition">
-              <i className="fab fa-discord text-2xl text-purple-300"></i>
-            </a>
+
           </div>
         </div>
       </div>

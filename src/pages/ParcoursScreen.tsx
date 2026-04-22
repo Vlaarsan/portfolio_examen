@@ -5,10 +5,12 @@ export default function Parcours() {
     {
       titre: 'Développeur React Native (Alternance)',
       entreprise: 'TF1',
-      periode: '2025 - Présent',
+      periode: '09/2024 - Présent',
       statut: 'Alternance',
       description: 'Développement d\'applications React Native pour TF1. Participation à des projets d\'envergure avec une équipe professionnelle dans un contexte de grande entreprise. Missions principales : développement feature, optimisation performance, code review.',
       icon: 'fab fa-react',
+      logo: 'https://www.tf1.fr/favicon.ico',
+      lienLogo: 'https://www.tf1.fr',
       color: 'from-purple-500 to-pink-600',
       type: 'experience'
     },
@@ -36,6 +38,15 @@ export default function Parcours() {
 
   const formations = [
     {
+      titre: 'Concepteur Développeur d\'Application',
+      lieu: 'Formation Bac +3 (Niveau 6)',
+      annee: '2023',
+      details: 'Diplôme de niveau 6 en conception et développement d\'applications. Apprentissage complet du cycle de développement logiciel, architecture, et gestion de projet.',
+      icon: 'fas fa-certificate',
+      color: 'from-cyan-500 to-blue-600',
+      colorKey: 'cyan'
+    },
+    {
       titre: 'Développeur React Native',
       lieu: 'Auto-formation & projets pratiques',
       annee: '2023 - 2024',
@@ -46,7 +57,7 @@ export default function Parcours() {
     {
       titre: 'Game Designer - Unreal Engine 5',
       lieu: 'Auto-formation & développement de jeu',
-      annee: '2024',
+      annee: '2022',
       details: 'Conception et développement du jeu PC "Saga Cube" sous Unreal Engine 5. Publication du jeu sur Steam avec une communauté active de joueurs.',
       icon: 'fas fa-gamepad',
       color: 'from-orange-500 to-amber-600'
@@ -70,19 +81,20 @@ export default function Parcours() {
     },
   ];
 
-  // Combinaison et tri chronologique (ancien au bas, récent au haut)
+  // Combinaison et tri chronologique (ancien au haut, récent au bas)
   const timeline = [
     { ...experiences[2], index: 0, colorKey: 'blue' },
-    { ...formations[2], index: 1, colorKey: 'yellow' },
-    { ...experiences[1], index: 2, colorKey: 'green' },
-    { ...formations[1], index: 3, colorKey: 'orange' },
-    { ...formations[0], index: 4, colorKey: 'red' },
-    { ...formations[3], index: 5, colorKey: 'indigo' },
-    { ...experiences[0], index: 6, colorKey: 'purple' },
+    { ...formations[2], index: 1, colorKey: 'orange' },
+    { ...formations[3], index: 2, colorKey: 'yellow' },
+    { ...formations[0], index: 3, colorKey: 'cyan' },
+    { ...formations[1], index: 4, colorKey: 'red' },
+    { ...experiences[1], index: 5, colorKey: 'green' },
+    { ...formations[4], index: 6, colorKey: 'indigo' },
+    { ...experiences[0], index: 7, colorKey: 'purple' },
   ];
 
   return (
-    <div className="min-h-screen bg-black pt-24 pb-16">
+    <div className="min-h-screen bg-transparent pt-24 pb-16">
       <div className="max-w-5xl mx-auto p-10 text-white">
         <h1 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-600">Mon Parcours</h1>
         <p className="text-opacity-70 mb-12">Frise chronologique de mon évolution professionnelle</p>
@@ -103,6 +115,7 @@ export default function Parcours() {
                 orange: { bg: 'from-orange-500 to-amber-600', text: 'text-orange-400' },
                 yellow: { bg: 'from-yellow-500 to-lime-600', text: 'text-yellow-400' },
                 indigo: { bg: 'from-indigo-500 to-violet-600', text: 'text-indigo-400' },
+                cyan: { bg: 'from-cyan-500 to-blue-600', text: 'text-cyan-400' },
               };
               const colorKey = (item as any).colorKey || 'purple';
               const colors = colorMap[colorKey];
@@ -112,7 +125,23 @@ export default function Parcours() {
                   <div className={`w-5/12 ${index % 2 === 0 ? '' : 'text-right'}`}>
                     <div className={`bg-gradient-to-br ${colors.bg} bg-opacity-10 rounded-lg p-6 border border-white/10 hover:border-white/30 transition`}>
                       <div className="flex items-start gap-3 mb-2">
-                        <i className={`${(item as any).icon} text-2xl ${colors.text}`}></i>
+                        {(item as any).lienLogo ? (
+                          <a 
+                            href={(item as any).lienLogo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title={`Visiter ${(item as any).entreprise}`}
+                            className="hover:opacity-80 transition shrink-0"
+                          >
+                            <img 
+                              src={(item as any).logo} 
+                              alt={(item as any).entreprise}
+                              className="w-6 h-6 object-contain"
+                            />
+                          </a>
+                        ) : (
+                          <i className={`${(item as any).icon} text-2xl ${colors.text}`}></i>
+                        )}
                         <div className={index % 2 !== 0 ? 'text-right' : ''}>
                           <h3 className="text-lg font-semibold">{(item as any).titre}</h3>
                           <p className="text-sm opacity-70">{(item as any).entreprise || (item as any).lieu}</p>

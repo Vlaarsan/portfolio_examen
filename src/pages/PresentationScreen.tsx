@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Presentation() {
   return (
@@ -36,7 +37,7 @@ export default function Presentation() {
             <div>
               <h3 className="text-lg font-semibold text-green-300 mb-2">Innovation & Amélioration continue</h3>
               <p className="opacity-80">
-                Toujours à la recherche de meilleures solutions. L'apprentissage n'est jamais terminé et j'embrace les défis technologiques.
+                Toujours à la recherche de meilleures solutions. L'apprentissage n'est jamais terminé et j'adore les défis technologiques.
               </p>
             </div>
           </div>
@@ -144,7 +145,7 @@ export default function Presentation() {
               </h3>
               <p className="opacity-80 mb-3">
                 Passionné par la création de jeux vidéo. J'ai développé et publié 'Saga Cube' sur Steam, 
-                et je continue à explorer les mécaniques de gameplay innovantes.
+                et je continue à explorer le monde merveilleux du jeux vidéo.
               </p>
             </div>
             <div>
@@ -168,7 +169,7 @@ export default function Presentation() {
                 <i className="fas fa-graduation-cap"></i> Apprentissage Continu
               </h3>
               <p className="opacity-80 mb-3">
-                Toujours à la recherche de nouvelles technologies. Actuellement intéressé par Web3, AI appliquée et performance.
+                Toujours à la recherche de nouvelles technologies. Actuellement intéressé par l'IA et en train de travailler sur mon application culinaire CuistotResto.
               </p>
             </div>
           </div>
@@ -180,12 +181,12 @@ export default function Presentation() {
             Vous cherchez un développeur <strong>autonome, rigoureux et innovant</strong> ? 
             Je serais ravi de discuter de comment je peux contribuer à votre projet.
           </p>
-          <a 
-            href="/contact"
+          <Link 
+            to="/contact"
             className="inline-block mt-4 px-8 py-3 bg-gradient-to-r from-green-500 to-blue-600 rounded-lg font-semibold hover:scale-105 transition-transform"
           >
             Me contacter
-          </a>
+          </Link>
         </div>
       </div>
     </div>

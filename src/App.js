@@ -14,7 +14,7 @@ import Contact from './pages/ContactScreen.tsx';
 function App() {
   return (
     <BrowserRouter>
-      <div className="bg-black min-h-screen">
+      <div className="app-background min-h-screen">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

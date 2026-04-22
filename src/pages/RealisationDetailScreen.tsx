@@ -20,7 +20,7 @@ export default function RealisationDetail() {
   }
 
   return (
-    <div className="min-h-screen bg-black pt-24 pb-16">
+    <div className="min-h-screen bg-transparent pt-24 pb-16">
       <div className="max-w-4xl mx-auto p-10 text-white">
         <Link to="/realisations" className="text-green-400 hover:text-green-300 transition mb-6 inline-flex items-center gap-2">
           <i className="fas fa-arrow-left"></i> Retour aux réalisations

@@ -8,7 +8,7 @@ export default function Home() {
           <img 
             src="https://github.com/Vlaarsan/Portfolio/blob/main/img/PP4.jpg?raw=true" 
             alt="David PRIAM" 
-            className="w-full h-full object-cover"
+            className="w-full h-full rounded-full object-cover object-[80%_10%] border-1 border-green-400 shadow-md transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-green-300"
           />
         </div>
       </div>
