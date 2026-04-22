@@ -12,7 +12,7 @@ export default function Presentation() {
           <p className="opacity-90">
             Je suis un <strong>développeur passionné</strong> par la création de solutions innovantes et l'apprentissage continu. 
             Actuellement en <strong>alternance chez TF1</strong>, j'applique mes compétences techniques et humaines pour créer des expériences utilisateur exceptionnelles.
-            Avec une approche <strong>autonome et rigoureuse</strong>, j'ai développé plusieurs applications en production et un jeu publié sur Steam.
+            Avec une approche <strong>autonome et rigoureuse</strong>, j'ai développé plusieurs applications et un jeu publié sur Steam.
           </p>
         </div>
 
@@ -46,13 +46,13 @@ export default function Presentation() {
         {/* 2. Projet professionnel et personnel */}
         <div className="bg-white/5 rounded-lg p-8 border border-blue-500/30">
           <h2 className="text-2xl font-semibold mb-6 text-blue-400 flex items-center gap-3">
-            <i className="fas fa-target"></i> Mon Projet Professionnel & Personnel
+            <i className="fas fa-briefcase"></i> Mon Projet Professionnel & Personnel
           </h2>
           <div className="space-y-4">
             <div>
               <h3 className="text-lg font-semibold text-blue-300 mb-2">Vision professionnelle</h3>
               <p className="opacity-80">
-                Devenir un <strong>développeur senior</strong> reconnu pour son expertise en React Native et web moderne, capable de mener des projets complexes et d'accompagner une équipe.
+                Devenir un <strong>développeur senior</strong> reconnu pour son expertise en React Native moderne, capable de mener des projets complexes et d'accompagner une équipe.
                 Je vise à créer des solutions qui impactent positivement les utilisateurs finaux et contribuent à l'innovation chez TF1.
               </p>
             </div>
@@ -64,7 +64,7 @@ export default function Presentation() {
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-blue-300 mb-2">Trajectorire de croissance</h3>
+              <h3 className="text-lg font-semibold text-blue-300 mb-2">Trajectoire de croissance</h3>
               <p className="opacity-80">
                 <strong>Court terme (1 an):</strong> Maîtriser les stacks de TF1, contribuer à 2-3 projects majeurs.
                 <br />
@@ -119,7 +119,7 @@ export default function Presentation() {
                 <i className="fas fa-comments"></i> Communication
               </h3>
               <p className="text-sm opacity-80">
-                Clairement explicite ses idées, documentation complète, interaction transparente.
+                Savoir clairement expliquer ses idées, faire des documentations complètes, ainsi qu'avoir une interaction transparente.
               </p>
             </div>
             <div className="bg-gradient-to-br from-indigo-500/10 to-violet-600/10 rounded-lg p-4 border border-indigo-500/20">

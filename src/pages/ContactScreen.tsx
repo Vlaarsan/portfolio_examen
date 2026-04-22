@@ -54,7 +54,7 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="font-semibold text-lg text-purple-300 mb-1">Localisation</h3>
-                <p className="opacity-70">Seine et Marne, France</p>
+                <p className="opacity-70">Seine et Marne, France </p>
               </div>
             </div>
 

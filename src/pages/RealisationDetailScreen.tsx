@@ -1,6 +1,6 @@
-import React from 'react';
-import { useParams, Link } from 'react-router-dom';
-import { realisations, competences } from '../data.ts';
+import React from "react";
+import { useParams, Link } from "react-router-dom";
+import { realisations, competences } from "../data.ts";
 
 export default function RealisationDetail() {
   const { id } = useParams<{ id: string }>();
@@ -11,7 +11,10 @@ export default function RealisationDetail() {
       <div className="min-h-screen flex items-center justify-center text-white pt-24">
         <div className="text-center">
           <h1 className="text-3xl font-bold mb-4">Projet non trouvé</h1>
-          <Link to="/realisations" className="text-green-400 hover:text-green-300 transition">
+          <Link
+            to="/realisations"
+            className="text-green-400 hover:text-green-300 transition"
+          >
             ← Retour aux réalisations
           </Link>
         </div>
@@ -22,29 +25,34 @@ export default function RealisationDetail() {
   return (
     <div className="min-h-screen bg-transparent pt-24 pb-16">
       <div className="max-w-4xl mx-auto p-10 text-white">
-        <Link to="/realisations" className="text-green-400 hover:text-green-300 transition mb-6 inline-flex items-center gap-2">
+        <Link
+          to="/realisations"
+          className="text-green-400 hover:text-green-300 transition mb-6 inline-flex items-center gap-2"
+        >
           <i className="fas fa-arrow-left"></i> Retour aux réalisations
         </Link>
-        
+
         {/* Image du projet */}
         {proj.image && (
           <div className="w-full h-96 rounded-lg overflow-hidden mb-8 border border-white/10 shadow-lg">
-            <img 
-              src={proj.image} 
-              alt={proj.nom} 
-              className="w-full h-full object-cover"
+            <img
+              src={proj.image}
+              alt={proj.nom}
+              className="w-full h-full object-cover object-[50%_15%]"
             />
           </div>
         )}
-        
-        <h1 className="text-5xl font-bold mb-6 pb-2 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-600">{proj.nom}</h1>
-        
+
+        <h1 className="text-5xl font-bold mb-6 pb-2 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-600">
+          {proj.nom}
+        </h1>
+
         {/* Liens directs vers GitHub, YouTube, Steam et démo */}
         <div className="flex flex-wrap gap-4 mb-12 mt-4">
           {proj.github && (
             <a
-              href={proj.github} 
-              target="_blank" 
+              href={proj.github}
+              target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 border border-white/20 rounded-lg hover:bg-white/20 hover:border-white/40 transition"
             >
@@ -53,9 +61,9 @@ export default function RealisationDetail() {
             </a>
           )}
           {proj.youtube && (
-            <a 
-              href={proj.youtube} 
-              target="_blank" 
+            <a
+              href={proj.youtube}
+              target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-red-500/20 border border-red-500/40 rounded-lg hover:bg-red-500/30 hover:border-red-500/60 transition text-red-300 hover:text-red-200"
             >
@@ -64,9 +72,9 @@ export default function RealisationDetail() {
             </a>
           )}
           {proj.steam && (
-            <a 
-              href={proj.steam} 
-              target="_blank" 
+            <a
+              href={proj.steam}
+              target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-blue-500/20 border border-blue-500/40 rounded-lg hover:bg-blue-500/30 hover:border-blue-500/60 transition text-blue-300 hover:text-blue-200"
             >
@@ -75,9 +83,9 @@ export default function RealisationDetail() {
             </a>
           )}
           {proj.lien && !proj.steam && (
-            <a 
-              href={proj.lien} 
-              target="_blank" 
+            <a
+              href={proj.lien}
+              target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-green-500/20 border border-green-500/40 rounded-lg hover:bg-green-500/30 hover:border-green-500/60 transition text-green-300 hover:text-green-200"
             >
@@ -163,7 +171,10 @@ export default function RealisationDetail() {
           </h2>
           <div className="space-y-4">
             {proj.etapes.map((etape, idx) => (
-              <div key={idx} className="flex items-start gap-4 pb-4 border-b border-white/10 last:border-0">
+              <div
+                key={idx}
+                className="flex items-start gap-4 pb-4 border-b border-white/10 last:border-0"
+              >
                 <div className="flex-shrink-0 w-8 h-8 rounded-full bg-cyan-500/30 border border-cyan-500/50 flex items-center justify-center text-sm font-bold text-cyan-400">
                   {idx + 1}
                 </div>
@@ -206,13 +217,15 @@ export default function RealisationDetail() {
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
             {proj.competences.map((compId) => {
-              const comp = competences.find(c => c.id === compId);
+              const comp = competences.find((c) => c.id === compId);
               return comp ? (
                 <Link key={compId} to={`/competence/${compId}`}>
                   <div className="p-6 bg-gradient-to-br from-green-500/10 to-blue-600/10 rounded-lg hover:from-green-500/20 hover:to-blue-600/20 transition border border-green-500/30 hover:border-green-500/60">
                     <div className="flex items-center gap-3 mb-3">
                       <i className={`${comp.icon} text-2xl text-green-400`}></i>
-                      <h3 className="font-semibold text-green-400 text-lg">{comp.nom}</h3>
+                      <h3 className="font-semibold text-green-400 text-lg">
+                        {comp.nom}
+                      </h3>
                     </div>
                     <p className="text-sm opacity-70">{comp.niveau}</p>
                   </div>
@@ -220,6 +233,12 @@ export default function RealisationDetail() {
               ) : null;
             })}
           </div>
+            <Link
+              to="/realisations"
+              className="text-green-400 hover:text-green-300 transition mt-6 mb-6 inline-flex items-center gap-2"
+            >
+              <i className="fas fa-arrow-left"></i> Retour aux réalisations
+            </Link>
         </div>
       </div>
     </div>

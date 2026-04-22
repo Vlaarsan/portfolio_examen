@@ -48,33 +48,33 @@ export interface Realisation {
 export const competences: Competence[] = [
   // Compétences Techniques
   {
-    id: "react-native",
-    nom: "React Native",
+    id: "html-css",
+    nom: "HTML/CSS & Tailwind",
     niveau: "Avancé",
     pourcentage: 90,
     categorie: "technique",
-    description: "Développement d'applications mobiles cross-platform iOS et Android.",
-    definition: "React Native est un framework permettant de développer des applications mobiles natives avec JavaScript et React.",
-    contexte: "En tant que développeur React Native, j'ai créé plusieurs applications mobiles en production déployées sur AppStore et Google Play.",
+    description: "Design responsive et accessibilité web. Tailwind CSS.",
+    definition: "HTML et CSS sont les fondations du web. Tailwind CSS permet un développement UI rapide et maintenable.",
+    contexte: "Utilisation Ponctuelle pour créer des interfaces responsive et accessibles.",
     anecdotes: [
-      "Lors du développement de Dogout, j'ai intégré Firebase pour l'authentification d'500+ utilisateurs avec une approche sécurisée",
-      "J'ai conçu l'architecture complète de Kodafit avec une gestion d'état optimisée permettant 60 exercices sans ralentissements",
-      "J'ai automatisé le build APK et les déploiements sur 3 versions majeures de CuistotResto"
+      "Création du design entièrement responsive du portfolio avec Tailwind",
+      "Implémentation des animations du portfolio avec des transitions CSS fluides",
+      "J'ai recomméncé mon portfolio 2 fois en utilisant différentes stack techniques, puis j'ai décidé d'utiliser Tailwind pour sa rapidité de développement et sa flexibilité, ce qui m'a permis de faire un design plus poussé que ce que j'avais imaginé au départ"
     ],
-    valeurAjoutee: "Création de 3 applications en production, expérience complète du cycle de vie (dev, tests, déploiement), gestion de communauté utilisateurs",
+    valeurAjoutee: "Interfaces belles, responsive, performantes et accessibles",
     autocritique: {
-      maitrise: "90% - Maîtrise avancée, capable de gérer des projets d'envergure",
-      vitesseAcquisition: "Acquisitions rapides, ayant maîtrisé complètement en 3-4 mois",
-      conseil: "Approfondir les performances et animations complexes, explorer le domaine du game dev mobile"
+      maitrise: "Excellent",
+      vitesseAcquisition: "Rapide, Tailwind est assez intuitif et facile à prendre en main",
+      conseil: "Approfondir l'accessibilité (WCAG) et les animations CSS avancées"
     },
     evolution: {
-      projetLien: "Intégration progressive du React Native au sein de TF1 pour des applications grand public",
-      formations: ["React Native Advanced Patterns", "Firebase Advanced Architecture", "React Native Performance Optimization"]
+      projetLien: "J'ai crée ce portfolio avec Tailwind",
+      formations: ["Advanced CSS Animations", "Web Accessibility (WCAG)"]
     },
-    realisations: ["dogout", "kodafit", "cuistoResto"],
-    icon: "fab fa-react",
+    realisations: ["site-pspe"],
+    icon: "fab fa-html5",
   },
-  {
+   {
     id: "react",
     nom: "React.js",
     niveau: "Avancé",
@@ -82,83 +82,58 @@ export const competences: Competence[] = [
     categorie: "technique",
     description: "Expertise en développement d'interfaces web modernes avec React.",
     definition: "React est une bibliothèque JavaScript pour construire des interfaces utilisateur déclaratives et performantes.",
-    contexte: "J'ai développé le site vitrine PSPE avec React, utilisant hooks avancés, context API et optimisation de performance.",
+    contexte: "J'ai développé ce portfolio avec React. J'utilise peu React pour le web, étant spécialisé dans le mobile.",
     anecdotes: [
-      "J'ai refactorisé le site PSPE avec des hooks personnalisés réduisant le bundle de 30%",
-      "Implémentation d'une architecture composant réutilisable pour 50+ pages du portfolio",
-      "Optimisation du rendu avec useMemo et useCallback améliorant les performances de 45%"
+      "Je met suis entrainé à utiliser React en faisant des petits projets personnels tel que des minis-jeux (pierre feuille ciseaux, memory, etc)",
+      "Implémentation d'une architecture composant réutilisable pour les pages du portfolio",
+      "Chez TF1 j'ai appris à me familiariser avec les optimisations de performance, notamment avec useMemo et useCallback améliorant les performances de 45%"
     ],
-    valeurAjoutee: "Site vitrine performant, responsive et optimisé SEO pour PSPE, expérience utilisateur fluide",
+    valeurAjoutee: "Capable de faire des interfaces web modernes, même si ce n'est pas mon domaine de prédilection, je suis à l'aise avec React pour le web",
     autocritique: {
-      maitrise: "85% - Très solide, mais peut être amélioré sur les patterns avancés",
-      vitesseAcquisition: "Acquisition très rapide, ayant maîtrisé en 2 mois",
-      conseil: "Approfondir Next.js et les patterns SSR pour le web"
+      maitrise: "Solide, mais peut être amélioré sur les patterns avancés",
+      vitesseAcquisition: "Acquisition assez rapide, surtout après la maîtrise de React Native",
+      conseil: "Approfondir Next.js et les optimisations de performance côté web"
     },
     evolution: {
-      projetLien: "Utiliser React au TF1 pour des applications web modernes",
+      projetLien: "J'ai utiliser React pour créer ce portfolio web",
       formations: ["Next.js Advanced Patterns", "React Performance Advanced"]
     },
-    realisations: ["site-pspe"],
+    realisations: [],
     icon: "fab fa-react",
   },
   {
-    id: "typescript",
-    nom: "TypeScript",
-    niveau: "Avancé",
-    pourcentage: 85,
+    id: "react-native",
+    nom: "React Native",
+    niveau: "Maitrisé",
+    pourcentage: 90,
     categorie: "technique",
-    description: "Code type-safe et maintenable pour tous mes projets.",
-    definition: "TypeScript ajoute un système de types statiques à JavaScript, améliorant la qualité et la maintenabilité du code.",
-    contexte: "Tous mes projets récents utilisent TypeScript pour garantir une meilleure qualité et réduire les bugs runtime.",
+    description: "Développement d'applications mobiles cross-platform iOS et Android.",
+    definition: "React Native est un framework permettant de développer des applications mobiles natives avec JavaScript et React.",
+    contexte: "En tant que développeur React Native, j'ai créé plusieurs applications mobiles utilisant ce framework.",
     anecdotes: [
-      "Création d'une librairie de types réutilisable pour Dogout et Kodafit réduisant les erreurs de 60%",
-      "Implémentation de génériques complexes pour la gestion d'état typée",
-      "Utilisation de types strictes évitant plusieurs bugs en production"
+      "Lors du développement de Dogout, j'ai intégré Firebase pour l'authentification d'utilisateurs avec une approche sécurisée",
+      "J'ai conçu l'architecture complète de Kodafit avec une gestion d'état optimisée permettant l'affichage de plus de 200 exercices sans ralentissements",
+      "J'ai eu des difficultés à comprendre React Redux, comme tous le monde j'imagine, encore aujourd'hui, je ne suis pas sur de le maitriser à 100%",
+      " À mon arrivé à TF1 j'ai découvert une base de code plus complexe que mes projets personnels, j'ai dû m'adapter rapidement pour comprendre l'architecture et contribuer efficacement."
     ],
-    valeurAjoutee: "Code robuste, excellent pour la collaboration en équipe, erreurs détectées en compile-time",
+    valeurAjoutee: "Création de 3 applications en production, expérience complète du cycle de vie (dev, tests, déploiement)",
     autocritique: {
-      maitrise: "85% - Très bon, des types avancés peuvent être exploités davantage",
-      vitesseAcquisition: "Rapide après la maîtrise de JavaScript",
-      conseil: "Approfondir les patterns de types génériques et les types utility"
+      maitrise: "Maîtrise avancée, capable de gérer des projets d'envergure",
+      vitesseAcquisition: "Acquisitions progressive au fil des projets",
+      conseil: "Approfondir les performances et animations complexes, explorer le domaine du game dev mobile"
     },
     evolution: {
-      projetLien: "Renforcer l'utilisation de TypeScript dans tous les futurs projets",
-      formations: ["Advanced TypeScript Patterns"]
+      projetLien: "Utilisation de React Native dans mon travail pour l'applications TF1+",
+      formations: ["React Native Advanced Patterns", "Firebase Advanced Architecture", "React Native Performance Optimization"]
     },
-    realisations: ["dogout", "kodafit", "site-pspe"],
-    icon: "fab fa-js",
+    realisations: ["dogout", "kodafit", "cuistoResto"],
+    icon: "fab fa-react",
   },
-  {
-    id: "unreal-engine",
-    nom: "Unreal Engine 5",
-    niveau: "Intermédiaire",
-    pourcentage: 75,
-    categorie: "technique",
-    description: "Développement de jeux vidéo et d'animation 3D avec Unreal Engine 5.",
-    definition: "Unreal Engine 5 est un moteur de jeu professionnel utilisé pour créer des jeux AAA et des expériences interactives.",
-    contexte: "Autodidacte en UE5, j'ai développé et publié 'Saga Cube' sur Steam avec succès.",
-    anecdotes: [
-      "Conception complète du jeu Saga Cube avec 15+ niveaux d'énigmes",
-      "Optimisation du moteur pour atteindre 60 FPS sur différentes configurations PC",
-      "Gestion de la publication Steam, du compte développeur jusqu'aux mises à jour post-lancement"
-    ],
-    valeurAjoutee: "Jeu publié sur Steam avec 200+ avis positifs, gestion complète du projet game dev",
-    autocritique: {
-      maitrise: "75% - Bon fondamental, à approfondir sur l'IA et le gameplay avancé",
-      vitesseAcquisition: "Lente initialement, accélérée après 3 mois",
-      conseil: "Approfondir les systèmes IA, les shaders et l'optimisation avancée"
-    },
-    evolution: {
-      projetLien: "Développer un 2e jeu avec des mécaniques plus complexes",
-      formations: ["UE5 Advanced AI", "Advanced Game Optimization", "Unreal Networking"]
-    },
-    realisations: ["saga-cube", "codex-orion"],
-    icon: "fas fa-gamepad",
-  },
-  {
+ 
+   {
     id: "javascript",
     nom: "JavaScript",
-    niveau: "Avancé",
+    niveau: "Maitrisé",
     pourcentage: 88,
     categorie: "technique",
     description: "Maîtrise complète de JavaScript ES6+ avec patterns modernes.",
@@ -171,9 +146,9 @@ export const competences: Competence[] = [
     ],
     valeurAjoutee: "Code performant, patterns modernes, gestion optimale des asynchrones",
     autocritique: {
-      maitrise: "88% - Très solide",
+      maitrise: "Très solide",
       vitesseAcquisition: "Acquisition rapide",
-      conseil: "Explorer davantage les web workers et les patterns concurrents"
+      conseil: "Explorer davantage les possibilités de JS et les patterns concurrents"
     },
     evolution: {
       projetLien: "Utiliser JavaScript avancé pour les architectures complexes",
@@ -183,32 +158,61 @@ export const competences: Competence[] = [
     icon: "fab fa-js-square",
   },
   {
-    id: "html-css",
-    nom: "HTML/CSS & Tailwind",
+    id: "typescript",
+    nom: "TypeScript",
     niveau: "Avancé",
-    pourcentage: 90,
+    pourcentage: 85,
     categorie: "technique",
-    description: "Design responsive et accessibilité web. Tailwind CSS.",
-    definition: "HTML et CSS sont les fondations du web. Tailwind CSS permet un développement UI rapide et maintenable.",
-    contexte: "Utilisation quotidienne pour créer des interfaces responsive et accessibles.",
+    description: "Code type-safe et maintenable pour tous mes projets.",
+    definition: "TypeScript ajoute un système de types statiques à JavaScript, améliorant la qualité et la maintenabilité du code.",
+    contexte: "Tous mes projets récents utilisent TypeScript pour garantir une meilleure qualité et réduire les bugs runtime.",
     anecdotes: [
-      "Création du design entièrement responsive du portfolio avec Tailwind",
-      "Implémentation des animations complexes du site PSPE",
-      "Optimisation CSS réduisant le bundle de 40%"
+      "Quand je suis arrivé à TF1 j'étais effrayé par TypeScript, mais j'ai rapidement compris que c'était un outil puissant pour éviter les bugs et améliorer la maintenabilité du code",
+      "Depuis j'ai décidé de l'utiliser dans tous mes projets",
+      "On a tous connu ce moment ou on fini de coder une fonctionnalité, on est content de soi, puis on voit plein de sursauts rouges partout, c'est ce qui m'est arrivé au début avec TypeScript, mais aujourd'hui je ne pourrais plus me passer de lui"
     ],
-    valeurAjoutee: "Interfaces belles, responsive, performantes et accessibles",
+    valeurAjoutee: "Code robuste, excellent pour la collaboration en équipe, erreurs détectées en compile-time",
     autocritique: {
-      maitrise: "90% - Excellent",
-      vitesseAcquisition: "Rapide",
-      conseil: "Approfondir l'accessibilité (WCAG) et les animations CSS avancées"
+      maitrise: "Très bon, des types avancés peuvent être exploités davantage",
+      vitesseAcquisition: "Rapide après la maîtrise de JavaScript",
+      conseil: "Approfondir les patterns de types génériques et les types utility"
     },
     evolution: {
-      projetLien: "Certification en accessibilité web",
-      formations: ["Advanced CSS Animations", "Web Accessibility (WCAG)"]
+      projetLien: "J'ai utilisé TypeScript pour tous mes projets récents, y compris ce portfolio",
+      formations: ["Advanced TypeScript Patterns"]
     },
-    realisations: ["site-pspe"],
-    icon: "fab fa-html5",
+    realisations: ["cuistoResto"],
+    icon: "fab fa-js",
   },
+  {
+    id: "unreal-engine",
+    nom: "Unreal Engine 5",
+    niveau: "Bon Fondamental",
+    pourcentage: 75,
+    categorie: "technique",
+    description: "Développement de jeux vidéo et d'animation 3D avec Unreal Engine 5.",
+    definition: "Unreal Engine 5 est un moteur de jeu professionnel utilisé pour créer des jeux AAA et des expériences interactives.",
+    contexte: "Autodidacte en UE5, j'ai développé et publié 'Saga Cube' sur Steam avec succès, j'ai également créé un mini film d'animation.",
+    anecdotes: [
+      "Conception complète du jeu Saga Cube avec plusieurs niveaux d'énigmes",
+      "Optimisation du moteur pour atteindre un nombre acceptable de FPS sur différentes configurations PC",
+      "Gestion de la publication Steam, du compte développeur jusqu'aux mises à jour post-lancement"
+    ],
+    valeurAjoutee: "Jeu publié sur Steam avec quelques avis positifs, gestion complète du projet game dev",
+    autocritique: {
+      maitrise: "Bon fondamental, à approfondir sur l'IA et le gameplay avancé",
+      vitesseAcquisition: "Lente initialement, Unreal est un moteur complexe, mais j'ai fait de grands progrès avec la pratique",
+      conseil: "Approfondir les systèmes IA, les shaders et l'optimisation avancée"
+    },
+    evolution: {
+      projetLien: "Développer un 2e jeu avec des mécaniques plus complexes",
+      formations: ["UE5 Advanced AI", "Advanced Game Optimization", "Unreal Networking"]
+    },
+    realisations: ["saga-cube", "codex-orion"],
+    icon: "fas fa-gamepad",
+  },
+ 
+  
   {
     id: "git",
     nom: "Git & GitHub",
@@ -219,14 +223,14 @@ export const competences: Competence[] = [
     definition: "Git est le système de contrôle de version standard permettant la collaboration et le versioning.",
     contexte: "Utilisation quotidienne pour tous les projets, gestion de branches et pull requests.",
     anecdotes: [
-      "Gestion de 6 dépôts publics avec des communautés actives",
+      "Gestion de plusieurs dépôts publics sur GitHub, utilisation quotidienne à TF1 avec des centaines de commits",
       "Implémentation de workflows Git professionnels (feature branches, code review)",
-      "Maintenance active avec gestion des issues et des contributions"
+      "Au début, je me rappele que j'avais peur quand je faisais un rebase et qu'il y avait des conflits, c'était la panique, même chose quand je devais faire un faire un git reset, j'avais peur de perdre du code ou de casser l'app"
     ],
     valeurAjoutee: "Collaboration fluide, historique de code propre, gestion efficace des versions",
     autocritique: {
-      maitrise: "85% - Très bon",
-      vitesseAcquisition: "Rapide",
+      maitrise: "Très bon",
+      vitesseAcquisition: "Assez Rapide",
       conseil: "Explorer les workflows avancés et les CI/CD"
     },
     evolution: {
@@ -239,25 +243,25 @@ export const competences: Competence[] = [
   {
     id: "firebase",
     nom: "Firebase",
-    niveau: "Avancé",
+    niveau: "Intermédiaire/Avancé",
     pourcentage: 85,
     categorie: "technique",
     description: "Backend-as-a-Service pour applications mobiles et web.",
     definition: "Firebase est une plateforme Google complète pour le développement d'applications (authentification, base de données, hosting).",
-    contexte: "Utilisé pour tous les backends mobiles (Dogout, Kodafit, CuistotResto).",
+    contexte: "Utilisé pour tous les backends mobiles (Dogout, Kodafit, CuistoResto).",
     anecdotes: [
-      "Configuration d'une architecture Firebase sécurisée pour 500+ utilisateurs",
+      "Configuration d'une architecture Firebase sécurisée pour des utilisateurs",
       "Implémentation de règles Firestore complexes pour la gestion des permissions",
-      "Optimisation des requêtes réduisant les coûts Firebase de 30%"
+      "J'avais commencé le dev d'un jeux multijoueurs avec des classements en temps réel via Firebase et j'ai du l'intégrer dans Unreal engine, c'était un vrai défi de faire communiquer Unreal avec Firebase, mais j'ai réussi à faire fonctionner le tout et à avoir un classement en temps réel dans le jeu"
     ],
     valeurAjoutee: "Backend robuste et scalable sans infrastructure serveur",
     autocritique: {
-      maitrise: "85% - Très bon",
-      vitesseAcquisition: "Rapide",
-      conseil: "Approfondir les Cloud Functions et l'architecture distribuée"
+      maitrise: "Très bon",
+      vitesseAcquisition: "Progressive, le système de 'documents' de Firestore a demandé un temps d'adaptation",
+      conseil: "Continuer à approfondir les règles de sécurité et explorer les fonctions cloud"
     },
     evolution: {
-      projetLien: "Explorer les alternatives (Supabase, AWS)",
+      projetLien: "J'ai utilisé Firebase pour Kodafit ainsi que Dogout. À l'avenir j'essayerai d'explorer les alternatives (Supabase, AWS)",
       formations: ["Firebase Advanced", "Cloud Functions"]
     },
     realisations: ["dogout", "kodafit", "cuistoResto"],
@@ -273,17 +277,17 @@ export const competences: Competence[] = [
     categorie: "humaine",
     description: "Capacité à apprendre seul et à gérer un projet de bout en bout.",
     definition: "L'autonomie est la capacité à prendre des initiatives, à apprendre rapidement et à résoudre des problèmes sans dépendre des autres.",
-    contexte: "Tous mes projets ont été développés en autodidacte, sans supervision directe.",
+    contexte: "La plupart de mes projets ont été développés en autodidacte, sans supervision directe.",
     anecdotes: [
-      "Apprentissage complet de React Native en 3 mois et création de Dogout",
+      "Apprentissage complet de React Native en quelques mois et création de Dogout",
       "Apprentissage d'Unreal Engine 5 et publication d'un jeu sur Steam",
       "Gestion complète du portfolio du design à la programmation"
     ],
     valeurAjoutee: "Capacité à mener des projets complexes seul, productivité élevée",
     autocritique: {
-      maitrise: "95% - Excellent",
+      maitrise: "Excellent",
       vitesseAcquisition: "Acquisitions très rapides",
-      conseil: "Travail en équipe peut être approfondi"
+      conseil: "Travail en équipe peut être approfondi, comme on dit, 'seul on va plus vite, ensemble on va plus loin'"
     },
     evolution: {
       projetLien: "Appliquer cette autonomie chez TF1 en contribution autonome",
@@ -304,11 +308,11 @@ export const competences: Competence[] = [
     anecdotes: [
       "Mise en place de linting ESLint et Prettier dans tous les projets",
       "Code reviews personnelles pour maintenir une qualité élevée",
-      "Documentation complète de toutes les APIs"
+      "Quand j'ai commencé à créer Saga Cube, j'avais tendance à faire du code rapide et sale pour avancer vite, mais je me suis rendu compte que ça me ralentissait à long terme, alors j'ai décidé de faire les choses bien dès le début, et ça m'a permis d'avancer plus vite et d'avoir un code plus propre"
     ],
     valeurAjoutee: "Code maintenable, bugs évités, collaboration facilitée",
     autocritique: {
-      maitrise: "90% - Excellent",
+      maitrise: "Excellent",
       vitesseAcquisition: "Développée au fil du temps",
       conseil: "Approfondir les tests unitaires et d'intégration"
     },
@@ -331,11 +335,11 @@ export const competences: Competence[] = [
     anecdotes: [
       "Conception unique du jeu Saga Cube avec mécanique d'énigmes originales",
       "Design du portfolio moderne et interactif",
-      "Film d'animation 'Le Codex d'Orion' primé"
+      "Ça n'a pas été facile d'imaginer le scénario du film d'animation 'Le Codex d'Orion', mais j'ai réussi à créer une histoire intéréssante et techniquement faisable avec mes compétences actuelles"
     ],
-    valeurAjoutee: "Projets différenciant, utilisateurs engagés, innovations produit",
+    valeurAjoutee: "Capacité à se démarquer, à créer des expériences uniques et à résoudre des problèmes de manière originale",
     autocritique: {
-      maitrise: "85% - Bon",
+      maitrise: "Bon",
       vitesseAcquisition: "Développée progressivement",
       conseil: "Approfondir le design thinking et l'innovation produit"
     },
@@ -357,14 +361,14 @@ export const competences: Competence[] = [
     contexte: "Présentation de projets, documentation, interactions avec utilisateurs.",
     anecdotes: [
       "Documentation claire de toutes mes applications et projets",
-      "Présentations persuasives à des communautés utilisateurs",
+      "En travaillant chez TF1, je me suis rendu compte qu'être un bon développeur ce n'est pas seulement faire du bon code, c'est aussi être capable de communiquer efficacement avec les autres membres de l'équipe, que ce soit les développeurs, les chefs de projet ou les designers, pour s'assurer que tout le monde est sur la même longueur d'onde et que le projet avance dans la bonne direction",
       "Réponses professionnelles aux issues GitHub et feedback utilisateurs"
     ],
     valeurAjoutee: "Clarté, transparence, utilisateurs informés et satisfaits",
     autocritique: {
-      maitrise: "80% - Bon",
+      maitrise: "Bon",
       vitesseAcquisition: "Développée progressivement",
-      conseil: "Approfondir la communication en équipe et la présentation"
+      conseil: "Être plus à l'aise lors de présentations en public"
     },
     evolution: {
       projetLien: "Collaboration et communication d'équipe chez TF1",
@@ -383,13 +387,13 @@ export const competences: Competence[] = [
     definition: "La collaboration est la capacité à contribuer à des objectifs communs et à créer de la synergie.",
     contexte: "Travail chez CodeFlow et TF1, contributions open-source.",
     anecdotes: [
-      "Collaboration en équipe chez CodeFlow sur Dogout",
+      "Collaboration en équipe pour le développement de Dogout, partage de connaissances avec d'autres développeurs",
       "Alternance actuelle chez TF1 dans un environnement collaboratif",
       "Contributions publiques et engagement communautaire"
     ],
     valeurAjoutee: "Projets plus robustes, apprentissage accéléré, équipes motivées",
     autocritique: {
-      maitrise: "75% - Bon",
+      maitrise: "Bon",
       vitesseAcquisition: "À développer",
       conseil: "Renforcer collaboration d'équipe et partage de connaissances"
     },
@@ -410,18 +414,18 @@ export const competences: Competence[] = [
     definition: "L'adaptabilité est la capacité à accepter les changements et à apprendre rapidement de nouveaux outils.",
     contexte: "Apprentissage constant de nouvelles technologies et frameworks.",
     anecdotes: [
-      "Passage de web (HTML/CSS) à mobile (React Native) en 3 mois",
+      "Passage de web (HTML/CSS) à mobile (React Native) en quelques mois",
       "Apprentissage d'Unreal Engine 5 sans expérience préalable en game dev",
-      "Intégration rapide chez TF1 avec nouvelles stack technologies"
+      "Intégration rapide chez TF1 avec nouvelles stack techniques et processus de travail différents de mes projets personnels"
     ],
     valeurAjoutee: "Productivité maintenue, apprentissage efficace, innovation continue",
     autocritique: {
-      maitrise: "85% - Excellent",
+      maitrise: "Excellent",
       vitesseAcquisition: "Très rapide",
       conseil: "Documenter les apprentissages pour partage de connaissances"
     },
     evolution: {
-      projetLien: "Explorer de nouveaux domaines (Web3, AI, etc.)",
+      projetLien: "Explorer de nouveaux domaines (backend, AI, etc.)",
       formations: ["Emerging technologies", "Continuous learning"]
     },
     realisations: ["dogout", "saga-cube"],
@@ -434,14 +438,14 @@ export const realisations: Realisation[] = [
     id: "dogout",
     nom: "Dogout",
     description: "Application mobile facilitant la création et la participation à des balades canines.",
-    presentation: "Dogout est une application mobile innovante qui connecte les propriétaires de chiens pour organiser des balades collectives.",
+    presentation: "Dogout est une application mobile qui connecte les propriétaires de chiens pour organiser des balades collectives.",
     definition: "Plateforme de mise en relation pour passionnés de chiens, permettant de créer des événements de balades et trouver d'autres propriétaires.",
     objectifs: [
       "Créer une communauté de propriétaires de chiens",
       "Faciliter l'organisation de balades collectives",
       "Améliorer la socialisation des chiens et de leurs propriétaires"
     ],
-    contexte: "Projet développé en stage chez CodeFlow (11/2023 - 02/2024). Demande du client pour une solution mobile innovante dans le domaine des animaux de compagnie.",
+    contexte: "Projet développé en stage chez CodeFlow (11/2023 - 02/2024).",
     enjeux: [
       "Acquérir une base utilisateurs suffisante",
       "Assurer la sécurité et la confiance entre utilisateurs",
@@ -456,7 +460,7 @@ export const realisations: Realisation[] = [
       "Conception des maquettes Figma et architecture",
       "Configuration Firebase (auth, Firestore, storage)",
       "Développement React Native core",
-      "Intégration des APIs externes",
+      "Intégration des APIs externes tel que Google Maps",
       "Testing et déploiement APK",
       "Lancement et support utilisateurs"
     ],
@@ -513,15 +517,15 @@ export const realisations: Realisation[] = [
   {
     id: "kodafit",
     nom: "Kodafit",
-    description: "Application mobile de fitness avec plans d'entraînement et suivi des exercices.",
-    presentation: "Kodafit est une application de fitness permettant aux utilisateurs de créer des plans d'entraînement personnalisés et de tracker leur progression.",
-    definition: "Plateforme de coaching fitness mobile avec exercices, plans d'entraînement, suivi de progression et communauté.",
+    description: "Application mobile de fitness avec entraînement et suivi des exercices.",
+    presentation: "Kodafit est une application de fitness permettant aux utilisateurs de visualiser plus de 200 exercices et également de suivre leur progression.",
+    definition: "Plateforme de fitness mobile avec exercices, plans d'entraînement, suivi de progression.",
     objectifs: [
       "Créer une app fitness complète et utilisable",
       "Offrir une grande variété d'exercices avec vidéos et descriptions",
       "Permettre le suivi des entraînements"
     ],
-    contexte: "Projet personnel de 3 mois. Apprentissage approfondi de React Native. Réponse à un besoin personnel et de marché.",
+    contexte: "Projet personnel. Apprentissage approfondi de React Native. Réponse à un besoin personnel et de marché.",
     enjeux: [
       "Créer une base de données d'exercices comprehensive",
       "Assurer la performance avec beaucoup de contenu",
@@ -581,8 +585,8 @@ export const realisations: Realisation[] = [
       "Post-production et export final"
     ],
     acteurs: "Solo (David PRIAM)",
-    resultats: "Film de 1min 30s terminé, posté sur YouTube, fierté de mon travail. Expérience précieuse en production vidéo et animation 3D.",
-    regardCritique: "Belle exploration créative ! Points positifs: cinematography innovante, animation fluide. À améliorer: scénario plus complexe, dialogues.",
+    resultats: "Film de 1m30s terminé, posté sur YouTube, fierté de mon travail. Expérience précieuse en production vidéo et animation 3D.",
+    regardCritique: "Belle exploration créative ! Points positifs: animation fluide, histoire intéressante, compositing, sound design, dialogues. À améliorer: scénario plus complexe, meilleure transmission des émotions.",
     competences: ["unreal-engine", "rigueur","autonomie","creativite"],
     youtube: "https://www.youtube.com/watch?v=Zy9kU0NkdmY",
     image: "https://github.com/Vlaarsan/Portfolio/blob/main/img/Miniature%20Codex%20d'Orion%202mo.png?raw=true",
@@ -598,7 +602,7 @@ export const realisations: Realisation[] = [
       "Générer des leads qualifiés",
       "Présenter les services et expertise"
     ],
-    contexte: "Commande freelance (06/2022 - 12/2022). Première expérience React en production.",
+    contexte: "Commande freelance (06/2022 - 12/2022). Première expérience web.",
     enjeux: [
       "Convertir visiteurs en leads",
       "SEO et visibilité search",
@@ -610,9 +614,9 @@ export const realisations: Realisation[] = [
       "Maintenance à long terme"
     ],
     etapes: [
-      "Découverte client et wireframes",
+      "Découverte wireframes",
       "Design UI/UX avec Figma",
-      "Développement React avec TailwindCSS",
+      "Développement HTML/CSS avec Tailwind",
       "Intégration formulaires de contact",
       "SEO on-page optimization",
       "Testing cross-browser",
@@ -629,7 +633,7 @@ export const realisations: Realisation[] = [
   },
   {
     id: "cuistoResto",
-    nom: "CuistotResto",
+    nom: "CuistoResto",
     description: "Application mobile de recettes avec favoris, partage et recommandations culinaires.",
     presentation: "Application culinaire permettant à l'utilisateur de découvrir des recettes, créer des favoris et planifier ses menus.",
     definition: "App mobile de cuisine avec base de données recettes, système de favoris et recommandations personnalisées.",
@@ -664,4 +668,5 @@ export const realisations: Realisation[] = [
     github: "https://github.com/Vlaarsan/CuistoResto",
     image: "https://t3.ftcdn.net/jpg/03/05/40/20/360_F_305402093_Xjwbp9xAfRElg7vD6eOAOe8BcYRLOqal.jpg",
   },
+
 ];

@@ -7,7 +7,7 @@ export default function Parcours() {
       entreprise: 'TF1',
       periode: '09/2024 - Présent',
       statut: 'Alternance',
-      description: 'Développement d\'applications React Native pour TF1. Participation à des projets d\'envergure avec une équipe professionnelle dans un contexte de grande entreprise. Missions principales : développement feature, optimisation performance, code review.',
+      description: 'Développement React Native pour TF1. Participation à un projet d\'envergure avec une équipe professionnelle dans un contexte de grande entreprise. Missions principales : développement feature, optimisation performance, code review.',
       icon: 'fab fa-react',
       logo: 'https://www.tf1.fr/favicon.ico',
       lienLogo: 'https://www.tf1.fr',
@@ -50,7 +50,7 @@ export default function Parcours() {
       titre: 'Développeur React Native',
       lieu: 'Auto-formation & projets pratiques',
       annee: '2023 - 2024',
-      details: 'Maîtrise complète de React Native à travers le développement de 3 applications mobiles en production: Dogout, Kodafit et CuistotResto.',
+      details: 'Maîtrise complète de React Native à travers le développement de 3 applications mobiles: Dogout, Kodafit et CuistotResto.',
       icon: 'fas fa-graduation-cap',
       color: 'from-red-500 to-rose-600'
     },
@@ -58,7 +58,7 @@ export default function Parcours() {
       titre: 'Game Designer - Unreal Engine 5',
       lieu: 'Auto-formation & développement de jeu',
       annee: '2022',
-      details: 'Conception et développement du jeu PC "Saga Cube" sous Unreal Engine 5. Publication du jeu sur Steam avec une communauté active de joueurs.',
+      details: 'Conception et développement du jeu PC "Saga Cube" sous Unreal Engine 5. Publication du jeu sur Steam.',
       icon: 'fas fa-gamepad',
       color: 'from-orange-500 to-amber-600'
     },
@@ -74,7 +74,7 @@ export default function Parcours() {
       titre: 'Animation 3D & Production Vidéo',
       lieu: 'Auto-formation',
       annee: '2026',
-      details: 'Production du film d\'animation "Le Codex d\'Orion" avec effets 3D professionnels. Apprentissage des outils de production vidéo et animation 3D.',
+      details: 'Production du film d\'animation "Le Codex d\'Orion". Apprentissage des outils de production vidéo et animation 3D.',
       icon: 'fas fa-film',
       color: 'from-indigo-500 to-violet-600',
       colorKey: 'indigo'
