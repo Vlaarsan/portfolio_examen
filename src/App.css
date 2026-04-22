@@ -2,6 +2,7 @@
   background: linear-gradient(135deg, #0a0a0a 0%, #0f0f1e 50%, #0a0a14 100%);
   background-attachment: fixed;
   position: relative;
+  z-index: 1;
 }
 
 .app-background::before {
@@ -18,10 +19,7 @@
   z-index: 0;
 }
 
-.app-background > * {
-  position: relative;
-  z-index: 1;
-}
+
 
 .App {
   text-align: center;

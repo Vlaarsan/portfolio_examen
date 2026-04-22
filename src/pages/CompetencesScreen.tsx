@@ -9,8 +9,7 @@ export default function Competences() {
   return (
     <div className="min-h-screen bg-transparent pt-24 pb-16">
       <div className="max-w-6xl mx-auto p-10 text-white">
-        <h1 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">Mes Compétences</h1>
-        <p className="text-opacity-70 mb-12">15 compétences : 7 techniques + 8 humaines</p>
+        <h1 className="text-4xl font-bold mb-16 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">Mes Compétences</h1>
 
         {/* Comparaison visuelle des compétences techniques */}
         <div className="mb-16">

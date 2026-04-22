@@ -134,7 +134,7 @@ export const competences: Competence[] = [
     niveau: "Intermédiaire",
     pourcentage: 75,
     categorie: "technique",
-    description: "Développement de jeux avec Unreal Engine 5.",
+    description: "Développement de jeux vidéo et d'animation 3D avec Unreal Engine 5.",
     definition: "Unreal Engine 5 est un moteur de jeu professionnel utilisé pour créer des jeux AAA et des expériences interactives.",
     contexte: "Autodidacte en UE5, j'ai développé et publié 'Saga Cube' sur Steam avec succès.",
     anecdotes: [

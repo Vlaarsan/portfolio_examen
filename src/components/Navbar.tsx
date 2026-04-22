@@ -7,7 +7,7 @@ export default function Navbar() {
     "https://github.com/Vlaarsan/Portfolio/blob/main/img/PP3.jpg?raw=true";
 
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur bg-black/70 border-b border-white/10">
+    <nav className="sticky top-0 z-50 backdrop-blur-md bg-black/80 border-b border-white/10 shadow-lg">
       <div className="max-w-6xl mx-auto flex justify-between items-center p-4 text-white">
         <div className="flex items-center gap-3">
           {/* Photo circulaire */}
