@@ -491,7 +491,7 @@ export const realisations: Realisation[] = [
       "Gérer la publication et les retours utilisateurs"
     ],
     risques: [
-      "Complexity de UE5 (courbe d'apprentissage élevée)",
+      "Complexité de UE5 (courbe d'apprentissage élevée)",
       "Performance et optimization issues",
       "Acceptation sur Steam (processus de review strict)"
     ],
