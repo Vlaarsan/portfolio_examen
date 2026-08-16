@@ -9,20 +9,17 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 backdrop-blur-md bg-black/80 border-b border-white/10 shadow-lg">
       <div className="max-w-6xl mx-auto flex justify-between items-center p-4 text-white">
-        <div className="flex items-center gap-3">
-          {/* Photo circulaire */}
+        <Link to="/" className="flex items-center gap-3" title="Retour à l'accueil">
+          {/* Photo circulaire, cliquable, fait office de logo */}
           <img
             src={photoUrl}
-            alt="David PRIAM"
+            alt="Logo David PRIAM - Retour à l'accueil"
             className="w-12 h-12 rounded-full object-cover object-[50%_20%] border-2 border-green-400 shadow-md transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-green-300"
           />
-          <Link
-            to="/"
-            className="font-bold text-xl bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent"
-          >
+          <span className="font-bold text-xl bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
             PRIAM David
-          </Link>
-        </div>
+          </span>
+        </Link>
 
         {/* Mobile menu button */}
         <button
@@ -48,8 +45,11 @@ export default function Navbar() {
           <Link to="/realisations" className="hover:text-blue-400 transition">
             Réalisations
           </Link>
-          <Link to="/parcours" className="hover:text-blue-400 transition">
-            Parcours
+          <Link to="/formations" className="hover:text-blue-400 transition">
+            Formations
+          </Link>
+          <Link to="/experiences" className="hover:text-blue-400 transition">
+            Expériences
           </Link>
           <Link to="/contact" className="hover:text-blue-400 transition">
             Contact
@@ -89,11 +89,18 @@ export default function Navbar() {
                 Réalisations
               </Link>
               <Link
-                to="/parcours"
+                to="/formations"
                 className="hover:text-blue-400 transition"
                 onClick={() => setIsOpen(false)}
               >
-                Parcours
+                Formations
+              </Link>
+              <Link
+                to="/experiences"
+                className="hover:text-blue-400 transition"
+                onClick={() => setIsOpen(false)}
+              >
+                Expériences
               </Link>
               <Link
                 to="/contact"

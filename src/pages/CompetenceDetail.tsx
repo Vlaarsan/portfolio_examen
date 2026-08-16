@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { competences, realisations } from "../data.ts";
+import CircularNav from "../components/CircularNav.tsx";
 
 export default function CompetenceDetail() {
   const { id } = useParams<{ id: string }>();
@@ -208,12 +209,19 @@ export default function CompetenceDetail() {
             </div>
           </div>
         )}
-            <Link
-              to="/competences"
-              className="text-green-400 hover:text-green-300 transition mt-10 mb-6 inline-flex items-center gap-2"
-            >
-              <i className="fas fa-arrow-left"></i> Retour aux compétences
-            </Link>
+
+        <CircularNav
+          items={competences.map((c) => ({ id: c.id, label: c.nom }))}
+          currentId={comp.id}
+          basePath="/competence/"
+        />
+
+        <Link
+          to="/competences"
+          className="text-green-400 hover:text-green-300 transition inline-flex items-center gap-2"
+        >
+          <i className="fas fa-arrow-left"></i> Retour aux compétences
+        </Link>
       </div>
     </div>
   );

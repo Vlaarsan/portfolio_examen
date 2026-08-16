@@ -9,8 +9,14 @@ export default function Realisations() {
         <h1 className="text-4xl font-bold mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">Mes Réalisations</h1>
         <div className="grid md:grid-cols-2 gap-6">
           {realisations.map((r) => (
-            <Link key={r.id} to={`/realisation/${r.id}`} className="group">
-              <div className="rounded-xl bg-gradient-to-br from-purple-500/10 to-blue-600/10 hover:from-purple-500/20 hover:to-blue-600/20 transition-all border border-white/10 hover:border-white/30 overflow-hidden h-full flex flex-col">
+            <div key={r.id} className="group relative">
+              {/* Lien étiré : couvre toute la carte pour la navigation, sans imbriquer d'ancres */}
+              <Link
+                to={`/realisation/${r.id}`}
+                className="absolute inset-0 z-0 rounded-xl"
+                aria-label={`Voir le détail de la réalisation ${r.nom}`}
+              ></Link>
+              <div className="rounded-xl bg-gradient-to-br from-purple-500/10 to-blue-600/10 group-hover:from-purple-500/20 group-hover:to-blue-600/20 transition-all border border-white/10 group-hover:border-white/30 overflow-hidden h-full flex flex-col">
                 {/* Image */}
                 <div className="w-full h-48 bg-black/50 overflow-hidden">
                   <img 
@@ -35,13 +41,16 @@ export default function Realisations() {
                   </div>
                   
                   {/* Direct Links */}
-                  <div className="flex gap-3 flex-wrap pt-4 border-t border-white/10">
+                  <div className="relative z-10 flex gap-3 flex-wrap pt-4 border-t border-white/10">
+                    <span className="flex items-center gap-2 px-3 py-2 bg-gradient-to-r from-green-500 to-blue-600 group-hover:from-green-600 group-hover:to-blue-700 rounded transition text-sm font-semibold pointer-events-none">
+                      <i className="fas fa-circle-info"></i>
+                      Plus d'infos
+                    </span>
                     {r.github && (
-                      <a 
-                        href={r.github} 
+                      <a
+                        href={r.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        onClick={(e) => e.stopPropagation()}
                         className="flex items-center gap-2 px-3 py-2 bg-white/10 hover:bg-white/20 rounded transition text-sm"
                         title="Code Source"
                       >
@@ -50,11 +59,10 @@ export default function Realisations() {
                       </a>
                     )}
                     {r.youtube && (
-                      <a 
-                        href={r.youtube} 
+                      <a
+                        href={r.youtube}
                         target="_blank"
                         rel="noopener noreferrer"
-                        onClick={(e) => e.stopPropagation()}
                         className="flex items-center gap-2 px-3 py-2 bg-red-500/20 hover:bg-red-500/30 rounded transition text-sm text-red-300"
                         title="Vidéo YouTube"
                       >
@@ -63,11 +71,10 @@ export default function Realisations() {
                       </a>
                     )}
                     {r.steam && (
-                      <a 
-                        href={r.steam} 
+                      <a
+                        href={r.steam}
                         target="_blank"
                         rel="noopener noreferrer"
-                        onClick={(e) => e.stopPropagation()}
                         className="flex items-center gap-2 px-3 py-2 bg-blue-500/20 hover:bg-blue-500/30 rounded transition text-sm text-blue-300"
                         title="Steam"
                       >
@@ -76,11 +83,10 @@ export default function Realisations() {
                       </a>
                     )}
                     {r.lien && !r.steam && (
-                      <a 
-                        href={r.lien} 
+                      <a
+                        href={r.lien}
                         target="_blank"
                         rel="noopener noreferrer"
-                        onClick={(e) => e.stopPropagation()}
                         className="flex items-center gap-2 px-3 py-2 bg-green-500/20 hover:bg-green-500/30 rounded transition text-sm text-green-300"
                         title="Voir en ligne"
                       >
@@ -91,7 +97,7 @@ export default function Realisations() {
                   </div>
                 </div>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       </div>

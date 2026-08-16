@@ -9,10 +9,21 @@ export default function Presentation() {
       <div className="space-y-8 text-lg leading-relaxed">
         {/* Introduction */}
         <div className="bg-white/5 rounded-lg p-8 border border-green-500/30">
+          <p className="opacity-90 mb-4">
+            Je m'appelle David PRIAM, je suis un <strong>développeur passionné</strong> par la création de solutions innovantes et par l'apprentissage continu.
+            Actuellement en <strong>alternance chez TF1</strong> en tant que développeur React Native, je travaille sur les environnements de télévision connectée
+            de l'application TF1+ : un univers technique exigeant, où l'utilisateur navigue à la télécommande plutôt qu'au doigt, et où chaque interface doit
+            rester lisible à plusieurs mètres de l'écran.
+          </p>
+          <p className="opacity-90 mb-4">
+            Mon parcours n'est pas linéaire au sens classique du terme : entre un diplôme de Concepteur Développeur d'Applications, une mission freelance de
+            développement web, un stage centré sur une application mobile, la publication en solo d'un jeu vidéo sur Steam et la réalisation d'un court-métrage
+            d'animation 3D, je me suis construit un profil de développeur curieux, capable de sortir de sa zone de confort technique dès que l'occasion se présente.
+            Vous pouvez d'ailleurs retrouver le détail de chacune de ces étapes dans les pages <Link to="/formations" className="text-green-400 hover:text-green-300 underline">Formations</Link> et <Link to="/experiences" className="text-green-400 hover:text-green-300 underline">Expériences</Link> de ce portfolio.
+          </p>
           <p className="opacity-90">
-            Je suis un <strong>développeur passionné</strong> par la création de solutions innovantes et l'apprentissage continu. 
-            Actuellement en <strong>alternance chez TF1</strong>, j'applique mes compétences techniques et humaines pour créer des expériences utilisateur exceptionnelles.
-            Avec une approche <strong>autonome et rigoureuse</strong>, j'ai développé plusieurs applications et un jeu publié sur Steam.
+            Avec une approche <strong>autonome et rigoureuse</strong>, j'ai développé plusieurs applications mobiles complètes ainsi qu'un jeu publié sur Steam,
+            toujours en cherchant à comprendre en profondeur les technologies que j'utilise plutôt qu'à les employer superficiellement.
           </p>
         </div>
 
@@ -23,21 +34,27 @@ export default function Presentation() {
           </h2>
           <div className="space-y-4">
             <div>
-              <h3 className="text-lg font-semibold text-green-300 mb-2">Expertise en ingénierie humain</h3>
+              <h3 className="text-lg font-semibold text-green-300 mb-2">Une technologie centrée sur l'humain</h3>
               <p className="opacity-80">
-                Je crois que la technologie doit servir les humains. Chaque ligne de code est pensée pour améliorer l'expérience utilisateur, pas pour compliquer.
+                Je crois que la technologie doit avant tout servir les personnes qui l'utilisent. Chaque ligne de code que j'écris est pensée en fonction de
+                l'expérience de l'utilisateur final, pas seulement en fonction de sa faisabilité technique. Sur les interfaces TV, ce principe prend un relief
+                particulier : un menu mal pensé n'est pas juste inesthétique, il devient littéralement inutilisable à la télécommande.
               </p>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-green-300 mb-2">Responsabilité & Qualité</h3>
               <p className="opacity-80">
-                Responsable de mes livrables, je pousse la qualité à chaque étape. Code rigoureux, tests approvisionnés, documentation claire.
+                Je me sens pleinement responsable de mes livrables, du premier commit jusqu'à la mise en production. Cela se traduit concrètement par un code
+                rigoureux, une couverture de tests que je cherche à systématiser, et une documentation claire pensée pour que n'importe quel développeur puisse
+                reprendre mon travail sans avoir à me solliciter à chaque question.
               </p>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-green-300 mb-2">Innovation & Amélioration continue</h3>
               <p className="opacity-80">
-                Toujours à la recherche de meilleures solutions. L'apprentissage n'est jamais terminé et j'adore les défis technologiques.
+                Je suis toujours à la recherche de meilleures solutions, quitte à remettre en question une approche qui fonctionne déjà si j'identifie une
+                façon plus propre ou plus performante de faire les choses. L'apprentissage n'est jamais terminé à mes yeux, et j'aborde chaque nouveau défi
+                technologique comme une occasion de progresser plutôt que comme une contrainte.
               </p>
             </div>
           </div>
@@ -52,25 +69,32 @@ export default function Presentation() {
             <div>
               <h3 className="text-lg font-semibold text-blue-300 mb-2">Vision professionnelle</h3>
               <p className="opacity-80">
-                Devenir un <strong>développeur senior</strong> reconnu pour son expertise en React Native moderne, capable de mener des projets complexes et d'accompagner une équipe.
-                Je vise à créer des solutions qui impactent positivement les utilisateurs finaux et contribuent à l'innovation chez TF1.
+                Mon ambition est de devenir un <strong>développeur senior</strong> reconnu pour son expertise en React Native moderne, capable de mener des
+                projets complexes de bout en bout et d'accompagner une équipe dans ses choix techniques. Je souhaite continuer à créer des solutions qui ont
+                un impact positif concret sur les utilisateurs finaux, et contribuer activement à l'innovation au sein des équipes techniques de TF1.
               </p>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-blue-300 mb-2">Projet personnel</h3>
               <p className="opacity-80">
-                <strong>Créateur</strong> dans l'âme, je veux développer des produits innovants qui résolvent des problèmes réels. 
-                Mon rêve est de créer une application mobile ou un jeu indie à impact, tout en contribuant à la tech française.
+                Je suis un <strong>créateur</strong> dans l'âme, et je veux continuer à développer des produits qui résolvent des problèmes réels plutôt que
+                de simples exercices techniques. Mon rêve serait de faire aboutir une application mobile ou un jeu indépendant à réel impact, tout en
+                continuant, à mon échelle, à contribuer à la vitalité de l'écosystème tech français.
               </p>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-blue-300 mb-2">Trajectoire de croissance</h3>
+              <p className="opacity-80 mb-2">
+                <strong>À court terme (1 an) :</strong> je souhaite continuer à monter en compétence sur les stacks techniques utilisées chez TF1 et contribuer
+                de façon significative à deux ou trois projets majeurs de l'équipe, en particulier sur les problématiques spécifiques aux interfaces TV.
+              </p>
+              <p className="opacity-80 mb-2">
+                <strong>À moyen terme (2 à 3 ans) :</strong> j'ambitionne de prendre progressivement des responsabilités de leadership technique, en accompagnant
+                et en formant d'autres développeurs moins expérimentés, comme j'ai commencé à le faire ponctuellement avec d'autres alternants.
+              </p>
               <p className="opacity-80">
-                <strong>Court terme (1 an):</strong> Maîtriser les stacks de TF1, contribuer à 2-3 projects majeurs.
-                <br />
-                <strong>Moyen terme (2-3 ans):</strong> Leadership technique, mentorat d'autres développeurs.
-                <br />
-                <strong>Long terme:</strong> Développeur sénior expert en React Native.
+                <strong>À long terme :</strong> mon objectif est de devenir un développeur senior reconnu pour son expertise en React Native, capable de
+                concevoir l'architecture de projets complexes et de faire des choix techniques structurants pour une équipe entière.
               </p>
             </div>
           </div>
@@ -144,8 +168,8 @@ export default function Presentation() {
                 <i className="fas fa-gamepad"></i> Game Development
               </h3>
               <p className="opacity-80 mb-3">
-                Passionné par la création de jeux vidéo. J'ai développé et publié 'Saga Cube' sur Steam, 
-                et je continue à explorer le monde merveilleux du jeux vidéo.
+                Passionné par la création de jeux vidéo. J'ai développé et publié 'Saga Cube' sur Steam,
+                et je continue à explorer le monde merveilleux du jeu vidéo.
               </p>
             </div>
             <div>
@@ -169,7 +193,41 @@ export default function Presentation() {
                 <i className="fas fa-graduation-cap"></i> Apprentissage Continu
               </h3>
               <p className="opacity-80 mb-3">
-                Toujours à la recherche de nouvelles technologies. Actuellement intéressé par l'IA et en train de travailler sur mon application culinaire CuistotResto.
+                Je suis toujours à la recherche de nouvelles technologies à explorer. Je m'intéresse actuellement de près à l'intelligence artificielle, tout
+                en continuant à développer mon application culinaire personnelle, CuistoResto.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* 5. Ma méthode de travail */}
+        <div className="bg-white/5 rounded-lg p-8 border border-cyan-500/30">
+          <h2 className="text-2xl font-semibold mb-6 text-cyan-400 flex items-center gap-3">
+            <i className="fas fa-diagram-project"></i> Ma Méthode de Travail
+          </h2>
+          <div className="space-y-4">
+            <div>
+              <h3 className="text-lg font-semibold text-cyan-300 mb-2">Comprendre avant de coder</h3>
+              <p className="opacity-80">
+                Avant d'écrire la moindre ligne de code, je prends le temps de bien cerner le besoin réel : à qui s'adresse la fonctionnalité, dans quel
+                contexte sera-t-elle utilisée, quelles sont les contraintes techniques déjà en place. Cette habitude, héritée de ma formation de Concepteur
+                Développeur d'Applications, m'évite de nombreux allers-retours inutiles une fois le développement lancé.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold text-cyan-300 mb-2">Itérer par petites étapes</h3>
+              <p className="opacity-80">
+                Je préfère avancer par incréments courts et testables plutôt que de développer une fonctionnalité entière avant de la tester pour la première
+                fois. Cette approche, que j'ai particulièrement affinée en travaillant en équipe chez TF1 avec des revues de code régulières, réduit le risque
+                de devoir remettre en question une architecture déjà largement développée.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold text-cyan-300 mb-2">Documenter et transmettre</h3>
+              <p className="opacity-80">
+                Que ce soit sur mes projets personnels ou dans un contexte professionnel, je prends l'habitude de documenter mes choix techniques : pourquoi
+                telle librairie plutôt qu'une autre, pourquoi telle architecture. Cette rigueur documentaire facilite la maintenance du projet et permet à
+                d'autres développeurs de comprendre rapidement mes décisions, même longtemps après qu'elles ont été prises.
               </p>
             </div>
           </div>

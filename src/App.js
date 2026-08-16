@@ -8,7 +8,10 @@ import Competences from './pages/CompetencesScreen.tsx';
 import CompetenceDetail from './pages/CompetenceDetail.tsx';
 import Realisations from './pages/RealisationsScreen.tsx';
 import RealisationDetail from './pages/RealisationDetailScreen.tsx';
-import Parcours from './pages/ParcoursScreen.tsx';
+import Formations from './pages/FormationsScreen.tsx';
+import FormationDetail from './pages/FormationDetailScreen.tsx';
+import Experiences from './pages/ExperiencesScreen.tsx';
+import ExperienceDetail from './pages/ExperienceDetailScreen.tsx';
 import Contact from './pages/ContactScreen.tsx';
 
 function App() {
@@ -23,7 +26,10 @@ function App() {
           <Route path="/competence/:id" element={<CompetenceDetail />} />
           <Route path="/realisations" element={<Realisations />} />
           <Route path="/realisation/:id" element={<RealisationDetail />} />
-          <Route path="/parcours" element={<Parcours />} />
+          <Route path="/formations" element={<Formations />} />
+          <Route path="/formation/:id" element={<FormationDetail />} />
+          <Route path="/experiences" element={<Experiences />} />
+          <Route path="/experience/:id" element={<ExperienceDetail />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>

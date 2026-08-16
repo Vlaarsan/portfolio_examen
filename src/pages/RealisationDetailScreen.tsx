@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { realisations, competences } from "../data.ts";
+import CircularNav from "../components/CircularNav.tsx";
 
 export default function RealisationDetail() {
   const { id } = useParams<{ id: string }>();
@@ -94,6 +95,17 @@ export default function RealisationDetail() {
             </a>
           )}
         </div>
+
+        {/* Technologies utilisées */}
+        {proj.technologies && proj.technologies.length > 0 && (
+          <div className="flex flex-wrap gap-2 mb-8">
+            {proj.technologies.map((tech) => (
+              <span key={tech} className="px-3 py-1 bg-purple-500/20 text-purple-200 rounded-full text-sm">
+                {tech}
+              </span>
+            ))}
+          </div>
+        )}
 
         {/* Présentation & Définition */}
         <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -233,13 +245,20 @@ export default function RealisationDetail() {
               ) : null;
             })}
           </div>
-            <Link
-              to="/realisations"
-              className="text-green-400 hover:text-green-300 transition mt-6 mb-6 inline-flex items-center gap-2"
-            >
-              <i className="fas fa-arrow-left"></i> Retour aux réalisations
-            </Link>
         </div>
+
+        <CircularNav
+          items={realisations.map((r) => ({ id: r.id, label: r.nom }))}
+          currentId={proj.id}
+          basePath="/realisation/"
+        />
+
+        <Link
+          to="/realisations"
+          className="text-green-400 hover:text-green-300 transition inline-flex items-center gap-2"
+        >
+          <i className="fas fa-arrow-left"></i> Retour aux réalisations
+        </Link>
       </div>
     </div>
   );
