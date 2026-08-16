@@ -116,6 +116,20 @@ export default function CompetenceDetail() {
           </div>
         </div>
 
+        {/* Récit détaillé - approfondissement */}
+        <div className="bg-white/5 rounded-lg p-8 border border-white/10 mb-8">
+          <h2 className="text-2xl font-bold text-indigo-400 mb-6 flex items-center gap-3">
+            <i className="fas fa-scroll"></i> Pour Aller Plus Loin
+          </h2>
+          <div className="space-y-4 text-justify">
+            {comp.approfondissement.map((paragraphe, index) => (
+              <p key={index} className="opacity-90 leading-relaxed">
+                {paragraphe}
+              </p>
+            ))}
+          </div>
+        </div>
+
         {/* Autocritique */}
         <div className="bg-white/5 rounded-lg p-8 border border-white/10 mb-8">
           <h2 className="text-2xl font-bold text-yellow-400 mb-6 flex items-center gap-3">

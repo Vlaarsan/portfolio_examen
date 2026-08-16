@@ -131,6 +131,20 @@ export default function RealisationDetail() {
           <p className="opacity-90 leading-relaxed">{proj.contexte}</p>
         </div>
 
+        {/* Récit détaillé du projet */}
+        <div className="bg-white/5 rounded-lg p-8 border border-white/10 mb-8">
+          <h2 className="text-2xl font-bold text-indigo-400 mb-6 flex items-center gap-3">
+            <i className="fas fa-scroll"></i> Récit Détaillé du Projet
+          </h2>
+          <div className="space-y-4 text-justify">
+            {proj.recit.map((paragraphe, index) => (
+              <p key={index} className="opacity-90 leading-relaxed">
+                {paragraphe}
+              </p>
+            ))}
+          </div>
+        </div>
+
         {/* Objectifs, Enjeux, Risques */}
         <div className="grid md:grid-cols-3 gap-6 mb-8">
           <div className="bg-green-500/10 rounded-lg p-6 border border-green-500/20">

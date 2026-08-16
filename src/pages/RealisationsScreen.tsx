@@ -42,10 +42,13 @@ export default function Realisations() {
                   
                   {/* Direct Links */}
                   <div className="relative z-10 flex gap-3 flex-wrap pt-4 border-t border-white/10">
-                    <span className="flex items-center gap-2 px-3 py-2 bg-gradient-to-r from-green-500 to-blue-600 group-hover:from-green-600 group-hover:to-blue-700 rounded transition text-sm font-semibold pointer-events-none">
+                    <Link
+                      to={`/realisation/${r.id}`}
+                      className="flex items-center gap-2 px-3 py-2 bg-gradient-to-r from-green-500 to-blue-600 hover:from-green-600 hover:to-blue-700 rounded transition text-sm font-semibold"
+                    >
                       <i className="fas fa-circle-info"></i>
                       Plus d'infos
-                    </span>
+                    </Link>
                     {r.github && (
                       <a
                         href={r.github}
