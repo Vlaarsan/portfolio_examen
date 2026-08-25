@@ -13,7 +13,7 @@ export default function Realisations() {
               {/* Lien étiré : couvre toute la carte pour la navigation, sans imbriquer d'ancres */}
               <Link
                 to={`/realisation/${r.id}`}
-                className="absolute inset-0 z-0 rounded-xl"
+                className="absolute inset-0 z-20 rounded-xl"
                 aria-label={`Voir le détail de la réalisation ${r.nom}`}
               ></Link>
               <div className="rounded-xl bg-gradient-to-br from-purple-500/10 to-blue-600/10 group-hover:from-purple-500/20 group-hover:to-blue-600/20 transition-all border border-white/10 group-hover:border-white/30 overflow-hidden h-full flex flex-col">
@@ -41,7 +41,7 @@ export default function Realisations() {
                   </div>
                   
                   {/* Direct Links */}
-                  <div className="relative z-10 flex gap-3 flex-wrap pt-4 border-t border-white/10">
+                  <div className="relative z-30 flex gap-3 flex-wrap pt-4 border-t border-white/10">
                     <Link
                       to={`/realisation/${r.id}`}
                       className="flex items-center gap-2 px-3 py-2 bg-gradient-to-r from-green-500 to-blue-600 hover:from-green-600 hover:to-blue-700 rounded transition text-sm font-semibold"
