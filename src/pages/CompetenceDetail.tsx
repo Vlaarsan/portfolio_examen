@@ -2,6 +2,7 @@ import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { competences, realisations } from "../data.ts";
 import CircularNav from "../components/CircularNav.tsx";
+import StarRating from "../components/StarRating.tsx";
 
 export default function CompetenceDetail() {
   const { id } = useParams<{ id: string }>();
@@ -68,6 +69,11 @@ export default function CompetenceDetail() {
                   className={`px-4 py-2 bg-opacity-20 rounded-full border ${categoryColor.border} font-semibold`}
                 >
                   Niveau: {comp.niveau}
+                </span>
+                <span
+                  className={`px-4 py-2 bg-opacity-20 rounded-full border ${categoryColor.border} font-semibold flex items-center gap-2`}
+                >
+                  <StarRating pourcentage={comp.pourcentage} size="text-base" />
                 </span>
               </div>
             </div>

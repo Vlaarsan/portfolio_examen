@@ -19,7 +19,7 @@ export default function Presentation() {
             Mon parcours n'est pas linéaire au sens classique du terme : entre un diplôme de Concepteur Développeur d'Applications, une mission freelance de
             développement web, un stage centré sur une application mobile, la publication en solo d'un jeu vidéo sur Steam et la réalisation d'un court-métrage
             d'animation 3D, je me suis construit un profil de développeur curieux, capable de sortir de sa zone de confort technique dès que l'occasion se présente.
-            Vous pouvez d'ailleurs retrouver le détail de chacune de ces étapes dans les pages <Link to="/formations" className="text-green-400 hover:text-green-300 underline">Formations</Link> et <Link to="/experiences" className="text-green-400 hover:text-green-300 underline">Expériences</Link> de ce portfolio.
+            Vous pouvez d'ailleurs retrouver le détail de chacune de ces étapes dans la page <Link to="/parcours" className="text-green-400 hover:text-green-300 underline">Parcours</Link> de ce portfolio, qui présente mes formations et mes expériences côte à côte.
           </p>
           <p className="opacity-90">
             Avec une approche <strong>autonome et rigoureuse</strong>, j'ai développé plusieurs applications mobiles complètes ainsi qu'un jeu publié sur Steam,

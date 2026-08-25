@@ -12,8 +12,8 @@ export default function FormationDetail() {
       <div className="min-h-screen flex items-center justify-center text-white pt-24">
         <div className="text-center">
           <h1 className="text-3xl font-bold mb-4">Formation non trouvée</h1>
-          <Link to="/formations" className="text-cyan-400 hover:text-cyan-300 transition">
-            ← Retour aux formations
+          <Link to="/parcours" className="text-cyan-400 hover:text-cyan-300 transition">
+            ← Retour au parcours
           </Link>
         </div>
       </div>
@@ -25,8 +25,8 @@ export default function FormationDetail() {
   return (
     <div className="min-h-screen bg-transparent pt-24 pb-16">
       <div className="max-w-4xl mx-auto p-10 text-white">
-        <Link to="/formations" className="text-cyan-400 hover:text-cyan-300 transition mb-6 inline-flex items-center gap-2">
-          <i className="fas fa-arrow-left"></i> Retour aux formations
+        <Link to="/parcours" className="text-cyan-400 hover:text-cyan-300 transition mb-6 inline-flex items-center gap-2">
+          <i className="fas fa-arrow-left"></i> Retour au parcours
         </Link>
 
         {/* Header */}
@@ -142,8 +142,8 @@ export default function FormationDetail() {
           basePath="/formation/"
         />
 
-        <Link to="/formations" className="text-cyan-400 hover:text-cyan-300 transition inline-flex items-center gap-2">
-          <i className="fas fa-arrow-left"></i> Retour aux formations
+        <Link to="/parcours" className="text-cyan-400 hover:text-cyan-300 transition inline-flex items-center gap-2">
+          <i className="fas fa-arrow-left"></i> Retour au parcours
         </Link>
       </div>
     </div>

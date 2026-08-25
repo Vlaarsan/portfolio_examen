@@ -45,11 +45,8 @@ export default function Navbar() {
           <Link to="/realisations" className="hover:text-blue-400 transition">
             Réalisations
           </Link>
-          <Link to="/formations" className="hover:text-blue-400 transition">
-            Formations
-          </Link>
-          <Link to="/experiences" className="hover:text-blue-400 transition">
-            Expériences
+          <Link to="/parcours" className="hover:text-blue-400 transition">
+            Parcours
           </Link>
           <Link to="/contact" className="hover:text-blue-400 transition">
             Contact
@@ -89,18 +86,11 @@ export default function Navbar() {
                 Réalisations
               </Link>
               <Link
-                to="/formations"
+                to="/parcours"
                 className="hover:text-blue-400 transition"
                 onClick={() => setIsOpen(false)}
               >
-                Formations
-              </Link>
-              <Link
-                to="/experiences"
-                className="hover:text-blue-400 transition"
-                onClick={() => setIsOpen(false)}
-              >
-                Expériences
+                Parcours
               </Link>
               <Link
                 to="/contact"

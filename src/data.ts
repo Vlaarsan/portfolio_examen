@@ -92,72 +92,6 @@ export interface Formation {
 export const competences: Competence[] = [
   // Compétences Techniques
   {
-    id: "html-css",
-    nom: "HTML/CSS & Tailwind",
-    niveau: "Avancé",
-    pourcentage: 90,
-    categorie: "technique",
-    description: "Design responsive et accessibilité web. Tailwind CSS.",
-    definition: "HTML et CSS constituent les fondations de toute interface web : structure sémantique du contenu d'un côté, mise en forme visuelle de l'autre. Tailwind CSS est un framework CSS dit \"utility-first\" qui permet de construire une interface directement dans le balisage grâce à des classes utilitaires, sans écrire de feuille de style séparée, tout en conservant un design cohérent grâce à un système de tokens (espacements, couleurs, typographies).",
-    contexte: "J'utilise HTML/CSS et Tailwind de façon ponctuelle, principalement pour des projets web personnels ou freelance, en complément de mon activité principale sur mobile. Ce portfolio ainsi que le site vitrine PSPE ont été entièrement construits avec cette stack.",
-    anecdotes: [
-      "J'ai conçu l'intégralité du design responsive de ce portfolio avec Tailwind CSS, en partant d'une page blanche jusqu'à un rendu cohérent sur mobile, tablette et desktop, en réfléchissant à chaque breakpoint plutôt qu'en adaptant une version desktop après coup.",
-      "J'ai mis en place les animations et transitions CSS du site (dégradés animés, effets de survol, apparitions progressives) afin de donner une impression de fluidité et de modernité, tout en gardant des temps de chargement réduits.",
-      "J'ai recommencé ce portfolio à deux reprises avec des stacks techniques différentes avant de me fixer sur Tailwind. Ce choix, motivé par sa rapidité de développement et sa flexibilité, m'a permis d'aller beaucoup plus loin dans le détail du design que ce que j'avais imaginé au départ, sans jamais être bloqué par des feuilles de style qui deviennent ingérables au fil du temps."
-    ],
-    valeurAjoutee: "Cette compétence me permet de livrer des interfaces à la fois esthétiques, responsives, performantes et accessibles, sans dépendre d'un designer ou d'un intégrateur pour les projets de petite ou moyenne envergure, ce qui accélère considérablement le cycle de développement de bout en bout.",
-    autocritique: {
-      maitrise: "Excellente sur les fondamentaux (flexbox, grid, responsive design) et sur l'écosystème Tailwind, que j'utilise désormais avec beaucoup d'aisance et de rapidité.",
-      vitesseAcquisition: "Rapide : Tailwind repose sur des concepts CSS classiques que je maîtrisais déjà, la prise en main de la syntaxe utilitaire n'a demandé que quelques jours de pratique.",
-      conseil: "Je gagnerais à approfondir l'accessibilité web (normes WCAG) de façon plus systématique, ainsi que les animations CSS avancées (keyframes complexes, scroll-driven animations) pour aller encore plus loin dans le raffinement visuel."
-    },
-    evolution: {
-      projetLien: "Ce portfolio, tout comme le site vitrine PSPE, a été entièrement conçu et intégré avec HTML/CSS et Tailwind, ce qui en fait une vitrine directe de cette compétence.",
-      formations: ["Formation \"Advanced CSS Animations\"", "Formation \"Web Accessibility (WCAG 2.1)\""]
-    },
-    realisations: ["site-pspe"],
-    icon: "fab fa-html5",
-    approfondissement: [
-      "Mon rapport à HTML/CSS a beaucoup changé depuis mes débuts. Au tout début, j'écrivais du CSS \"classique\" : des fichiers .css séparés, des noms de classes BEM à rallonge, et une bonne dose de temps perdu à chercher pourquoi tel élément débordait de son conteneur ou pourquoi telle marge ne s'appliquait pas comme prévu. C'est en préparant le site vitrine de PSPE que j'ai commencé à ressentir les limites de cette approche : sur un projet de taille modeste, je passais autant de temps à nommer des classes et à naviguer entre fichiers HTML et CSS qu'à réellement construire l'interface.",
-      "La découverte de Tailwind CSS, un peu plus tard, a été un vrai déclic. L'idée de composer une interface directement dans le balisage, avec des classes utilitaires prévisibles (p-4, flex, text-lg, bg-gradient-to-r...), m'a d'abord semblé contre-intuitive : n'était-ce pas contraire à toutes les bonnes pratiques de séparation entre structure et style qu'on m'avait enseignées ? En pratique, j'ai vite compris que cette séparation stricte a un coût réel en vitesse de développement, surtout pour un développeur qui travaille seul et doit avancer vite sur beaucoup de fronts à la fois.",
-      "Ce portfolio est le meilleur exemple concret de cette compétence : je l'ai littéralement reconstruit deux fois avant de me fixer sur cette stack. La première version utilisait des feuilles de style traditionnelles et devenait difficile à faire évoluer dès que je voulais ajuster un composant partagé entre plusieurs pages. La seconde tentative, avec une bibliothèque de composants tierce, m'a fait perdre du temps à contourner des styles par défaut peu flexibles. Tailwind m'a permis de retrouver un contrôle total sur chaque pixel, tout en gardant une cohérence visuelle grâce aux tokens de couleurs et d'espacements définis une seule fois dans la configuration.",
-      "Aujourd'hui, je considère cette compétence comme un outil complémentaire plutôt que central dans mon activité professionnelle : je ne suis pas intégrateur web de métier, mais savoir construire rapidement une interface propre et responsive, sans dépendre d'un designer ou d'un développeur front-end dédié, m'a été très utile à plusieurs reprises, que ce soit pour livrer une mission freelance en autonomie ou pour prototyper rapidement une idée avant de la faire valider."
-    ],
-  },
-  {
-    id: "react",
-    nom: "React.js",
-    niveau: "Avancé",
-    pourcentage: 85,
-    categorie: "technique",
-    description: "Expertise en développement d'interfaces web modernes avec React.",
-    definition: "React est une bibliothèque JavaScript développée par Meta qui permet de construire des interfaces utilisateur déclaratives, découpées en composants réutilisables. Elle repose sur un DOM virtuel qui optimise les mises à jour de l'affichage et sur un système de hooks qui structure la gestion d'état et des effets de bord.",
-    contexte: "J'ai développé ce portfolio de A à Z avec React, ce qui m'a permis de mettre en pratique sur le web des réflexes que j'ai principalement acquis côté mobile avec React Native. Le web n'est pas mon terrain de prédilection, mais la proximité entre React et React Native me permet d'y être rapidement productif.",
-    anecdotes: [
-      "Je me suis entraîné à React en réalisant plusieurs petits projets personnels ludiques (un pierre-feuille-ciseaux, un jeu de memory, un compteur avec état partagé) pour bien intégrer les concepts de props, d'état local et de cycle de vie des composants avant de m'attaquer à un projet plus ambitieux.",
-      "J'ai mis en place une architecture de composants réutilisables pour l'ensemble des pages de ce portfolio (cartes de compétences, cartes de réalisations, frises chronologiques, navigation) afin d'éviter la duplication de code et de faciliter les évolutions futures.",
-      "Chez TF1, en travaillant côté React Native, j'ai appris à me familiariser avec les optimisations de rendu comme useMemo et useCallback, des réflexes que j'ai directement réutilisés sur ce portfolio pour éviter les re-rendus inutiles des listes de compétences et de réalisations."
-    ],
-    valeurAjoutee: "Grâce à React, je suis capable de concevoir des interfaces web modernes et maintenables même si ce n'est pas mon domaine de prédilection au quotidien : je suis parfaitement à l'aise pour reprendre un projet web, comprendre son architecture et y contribuer efficacement.",
-    autocritique: {
-      maitrise: "Solide sur les fondamentaux et les patterns courants (composition, context API, hooks personnalisés), avec encore une marge de progression sur des patterns plus avancés (render props, compound components).",
-      vitesseAcquisition: "Assez rapide, en particulier après avoir déjà maîtrisé React Native : la logique de composants et de hooks est directement transposable d'un environnement à l'autre.",
-      conseil: "Je souhaite approfondir Next.js (rendu serveur, routing par fichiers) ainsi que les optimisations de performance côté web, deux sujets que je n'ai pas encore eu l'occasion de pratiquer en conditions réelles."
-    },
-    evolution: {
-      projetLien: "J'ai utilisé React pour concevoir l'intégralité de ce portfolio, de la structure des routes jusqu'aux composants d'interface.",
-      formations: ["Formation \"Next.js Advanced Patterns\"", "Formation \"React Performance Advanced\""]
-    },
-    realisations: [],
-    icon: "fab fa-react",
-    approfondissement: [
-      "React occupe une place particulière dans mon parcours : c'est la bibliothèque qui m'a ouvert la porte du développement mobile, avant même que je m'y attarde sérieusement côté web. Historiquement, j'ai appris les concepts de React (composants, props, état, cycle de vie) en apprenant React Native, puis j'ai fait le chemin inverse en revenant vers le web pour construire ce portfolio. Cette trajectoire \"à l'envers\" par rapport à beaucoup de développeurs web classiques m'a donné un regard un peu différent sur la bibliothèque : je pense d'abord en termes de composants réutilisables et de flux de données descendant, des réflexes que j'ai consolidés sur mobile avant de les retrouver sur le web.",
-      "Construire ce portfolio en React m'a forcé à structurer mes idées d'une façon que je n'avais pas encore pratiquée seul sur un projet web complet : découper l'application en pages (Home, Présentation, Compétences, Réalisations, Formations, Expériences, Contact), extraire des composants partagés comme la barre de navigation ou le composant de navigation circulaire entre les fiches détaillées, et organiser les données de contenu (compétences, réalisations, formations, expériences) dans un fichier central plutôt que de les disperser dans chaque composant. Ce choix d'architecture, qui peut sembler évident après coup, est le fruit de plusieurs itérations : mes premières versions du portfolio mélangeaient contenu et présentation dans les mêmes fichiers, ce qui rendait chaque modification de texte fastidieuse.",
-      "L'un des aspects les plus intéressants a été de retrouver, côté web, des problématiques que je connaissais déjà côté mobile : éviter les re-rendus inutiles avec useMemo et useCallback, gérer proprement les listes avec des clés stables, ou encore réfléchir à quand extraire un état local plutôt que de le faire remonter inutilement haut dans l'arbre de composants. Cette proximité entre React et React Native est justement ce qui explique pourquoi, bien que le web ne soit pas mon activité principale, je reste rapidement opérationnel dessus : les patterns mentaux sont les mêmes, seule la couche de rendu final change (DOM vs vues natives).",
-      "À l'avenir, je souhaite explorer des frameworks construits sur React comme Next.js, que je n'ai pas encore eu l'occasion de pratiquer en conditions réelles, notamment pour comprendre les enjeux du rendu côté serveur et de l'optimisation du référencement, deux sujets peu présents dans mon quotidien de développeur mobile mais qui élargiraient ma polyvalence de développeur généraliste front-end."
-    ],
-  },
-  {
     id: "react-native",
     nom: "React Native",
     niveau: "Maîtrisé",
@@ -491,72 +425,6 @@ export const competences: Competence[] = [
       "Répondre aux retours utilisateurs et aux issues GitHub sur mes projets personnels m'a également appris une forme spécifique de communication écrite : rester professionnel et pédagogue même face à un retour maladroit ou une critique mal formulée, en expliquant toujours le raisonnement derrière une décision plutôt que de se contenter d'un correctif silencieux. Mon point de vigilance aujourd'hui reste la prise de parole devant un groupe plus large : à l'écrit et en petit comité, je suis à l'aise, mais je sais que présenter un sujet technique devant un auditoire nombreux demande un travail spécifique que je n'ai pas encore suffisamment pratiqué, et que je compte développer activement dans les mois à venir."
     ],
   },
-  {
-    id: "collaboration",
-    nom: "Collaboration",
-    niveau: "Bon",
-    pourcentage: 75,
-    categorie: "humaine",
-    description: "Capacité à travailler efficacement avec d'autres et à partager les connaissances.",
-    definition: "La collaboration est la capacité à contribuer à des objectifs communs au sein d'une équipe, à partager ses connaissances et à créer une véritable synergie plutôt que de travailler en silo.",
-    contexte: "J'ai développé cette compétence chez CodeFlow puis chez TF1, ainsi qu'à travers quelques contributions publiques sur des projets open-source.",
-    anecdotes: [
-      "J'ai collaboré en équipe pour le développement de l'application Dogout durant mon stage chez CodeFlow, en partageant régulièrement mes avancées et mes points de blocage avec les autres développeurs.",
-      "Mon alternance actuelle chez TF1 se déroule dans un environnement collaboratif structuré, avec des rituels d'équipe réguliers (points quotidiens, revues de code, rétrospectives) qui m'ont appris à mieux articuler mon travail avec celui des autres.",
-      "J'ai réalisé quelques contributions publiques sur GitHub et je m'implique dans la communauté technique, ce qui m'a habitué à recevoir et à donner des retours constructifs sur du code qui n'est pas le mien."
-    ],
-    valeurAjoutee: "La collaboration rend mes projets plus robustes grâce à des regards croisés, accélère mon apprentissage au contact d'autres développeurs, et contribue à des équipes plus motivées et plus efficaces collectivement.",
-    autocritique: {
-      maitrise: "Bonne, notamment dans un contexte d'équipe structuré comme celui de TF1 ; c'est une compétence que j'ai moins eu l'occasion de pratiquer sur mes projets personnels, majoritairement réalisés seul.",
-      vitesseAcquisition: "À développer davantage, car mon parcours très autodidacte m'a plus souvent placé en solo qu'en équipe jusqu'à présent.",
-      conseil: "Je veux renforcer la collaboration d'équipe et le partage de connaissances, par exemple en accompagnant plus activement d'autres développeurs juniors ou en participant davantage aux revues de code de mes collègues."
-    },
-    evolution: {
-      projetLien: "Je développe une collaboration plus avancée chez TF1, dans un contexte de projet à grande échelle impliquant de nombreuses parties prenantes.",
-      formations: ["Formation \"Agile et gestion d'équipe\"", "Certification \"Scrum Master\""]
-    },
-    realisations: ["dogout"],
-    icon: "fas fa-handshake",
-    approfondissement: [
-      "La collaboration est probablement la compétence la moins \"naturelle\" de mon profil, précisément parce que la majeure partie de mon parcours s'est construite en solo. Développer seul un jeu, une application mobile ou un portfolio demande beaucoup d'autonomie, mais laisse peu d'occasions de pratiquer réellement le travail en équipe : il n'y a personne d'autre avec qui synchroniser ses décisions, personne dont il faut tenir compte du planning ou du style de travail.",
-      "Mon stage chez CodeFlow a été ma première vraie confrontation avec cette réalité. Développer Dogout dans un cadre encadré signifiait rendre des comptes régulièrement, partager mes avancées et surtout mes points de blocage, plutôt que de les résoudre seul dans mon coin puis présenter un résultat fini. Cet exercice, simple en apparence, demande une forme d'humilité que je ne pratiquais pas naturellement : accepter de montrer un travail encore imparfait, accepter qu'une autre personne ait un avis différent sur la meilleure façon de résoudre un problème.",
-      "Chez TF1, cette dimension collaborative est devenue quotidienne et beaucoup plus structurée : rituels d'équipe réguliers, revues de code systématiques, rétrospectives. J'y ai appris que la collaboration efficace n'est pas seulement une question de bonne volonté, mais aussi de méthode : savoir découper une tâche pour qu'elle s'articule proprement avec le travail des autres, savoir formuler un commentaire de revue de code de façon constructive plutôt que simplement correctrice, savoir demander de l'aide au bon moment plutôt que trop tôt ou trop tard.",
-      "Je considère cette compétence comme celle sur laquelle j'ai encore le plus de marge de progression, et c'est précisément pour cela que je continue à m'investir dans des contributions publiques sur GitHub et à rechercher activement les occasions d'accompagner d'autres développeurs, notamment d'autres alternants chez TF1. Recevoir et donner des retours constructifs sur du code qui n'est pas le sien est un muscle qui se développe avec la pratique, et je suis convaincu que renforcer cette compétence aura un effet démultiplicateur sur toutes les autres, techniques comme humaines."
-    ],
-  },
-  {
-    id: "adaptabilite",
-    nom: "Adaptabilité",
-    niveau: "Avancé",
-    pourcentage: 85,
-    categorie: "humaine",
-    description: "Flexibilité face aux changements et aux nouvelles technologies.",
-    definition: "L'adaptabilité est la capacité à accepter le changement et à apprendre rapidement de nouveaux outils, de nouvelles méthodes ou de nouveaux contextes de travail, sans que cela ne freine significativement la productivité.",
-    contexte: "Cette compétence s'est construite au fil d'un apprentissage constant de nouvelles technologies et de contextes professionnels très différents les uns des autres.",
-    anecdotes: [
-      "Je suis passé du développement web (HTML/CSS) au développement mobile (React Native) en quelques mois seulement, en réutilisant les concepts transférables et en identifiant rapidement les vraies différences entre les deux mondes.",
-      "J'ai appris Unreal Engine 5 sans aucune expérience préalable en game development, un changement de domaine radical par rapport à mes projets web et mobile.",
-      "Mon intégration chez TF1 a demandé une adaptation rapide à une nouvelle stack technique, à des processus de travail bien plus formalisés et à une échelle de projet très différente de mes projets personnels solo."
-    ],
-    valeurAjoutee: "Cette adaptabilité me permet de maintenir ma productivité face au changement, d'apprendre efficacement de nouveaux outils, et de contribuer à une innovation continue plutôt que de me reposer uniquement sur des acquis figés.",
-    autocritique: {
-      maitrise: "Excellente : je considère le changement de contexte technique comme une opportunité plutôt que comme une contrainte.",
-      vitesseAcquisition: "Très rapide, cette qualité s'est renforcée à chaque nouveau domaine exploré (web, mobile, jeu vidéo, animation 3D).",
-      conseil: "Je veux mieux documenter mes apprentissages au fil de l'eau, pour pouvoir les partager plus facilement avec d'autres et capitaliser dessus plus efficacement à l'avenir."
-    },
-    evolution: {
-      projetLien: "Mon objectif est d'explorer de nouveaux domaines techniques (backend, intelligence artificielle) pour continuer à élargir mon champ de compétences.",
-      formations: ["Formation \"Emerging technologies\"", "Formation \"Continuous learning\""]
-    },
-    realisations: ["dogout", "saga-cube"],
-    icon: "fas fa-sync-alt",
-    approfondissement: [
-      "Si je devais choisir la compétence qui explique le mieux la diversité de mon profil, ce serait l'adaptabilité. Sur le papier, mon parcours peut sembler dispersé : développement web, développement mobile, game design, animation 3D. En réalité, chacun de ces changements de domaine a été une décision volontaire, motivée par l'envie de sortir d'une zone de confort dès qu'elle commençait à se refermer, plutôt qu'un manque de constance.",
-      "Le passage du web au mobile en est un bon exemple concret : après avoir livré le site PSPE, j'aurais pu continuer indéfiniment dans le développement web, un domaine où je commençais à être à l'aise. J'ai préféré basculer vers React Native, en identifiant rapidement les concepts transférables (composants, état, props) pour ne pas repartir strictement de zéro, tout en acceptant d'apprendre un écosystème entièrement différent (navigation native, accès aux capteurs, publication sur les stores).",
-      "Le saut vers Unreal Engine 5 a été plus radical encore, puisqu'aucun concept de mon bagage de développeur web ou mobile ne se transposait directement à la 3D temps réel et au game design. Cette expérience m'a appris une leçon que j'applique systématiquement depuis : face à un domaine totalement nouveau, mieux vaut accepter d'être débutant sans complexe, décomposer l'apprentissage en petites étapes gérables, plutôt que de vouloir comprendre l'ensemble du système d'un seul coup.",
-      "Mon intégration chez TF1 a été le test le plus récent et le plus exigeant de cette adaptabilité : nouvelle stack technique spécifique aux environnements TV, nouveaux processus de travail bien plus formalisés qu'en solo, nouvelle échelle de projet avec des enjeux de performance et de compatibilité que mes projets personnels n'abordaient jamais. Cette faculté à me reconstruire rapidement dans un nouveau contexte, sans que cela ne fasse chuter durablement ma productivité, est probablement l'une des raisons pour lesquelles je me sens aujourd'hui capable d'envisager sereinement de nouveaux domaines encore inexplorés, comme le backend ou l'intelligence artificielle, plutôt que de me contenter de consolider indéfiniment ce que je maîtrise déjà."
-    ],
-  },
 ];
 
 export const realisations: Realisation[] = [
@@ -791,7 +659,7 @@ export const realisations: Realisation[] = [
       "Respecter les délais annoncés tout en intégrant les demandes légitimes du client a demandé un vrai exercice d'équilibriste, d'autant que je découvrais en parallèle les subtilités du développement web (compatibilité entre navigateurs, optimisation SEO de base, responsive design) sur lesquelles je n'avais alors que des connaissances théoriques.",
       "Livrer ce site et recevoir un retour client positif a été une validation importante à un moment charnière de mon parcours : cela m'a prouvé que je pouvais transformer une compétence technique en valeur concrète pour un client réel, en dehors de tout cadre scolaire ou encadré. Cette première expérience de la relation client, avec ses exigences de communication et de gestion des attentes, m'a servi de socle pour aborder plus sereinement mes missions professionnelles suivantes, y compris mon stage chez CodeFlow quelques mois plus tard."
     ],
-    competences: ["html-css", "javascript", "git", "communication", "rigueur", "autonomie"],
+    competences: ["javascript", "git", "communication", "rigueur", "autonomie"],
     technologies: ["HTML5", "CSS3", "Tailwind CSS", "JavaScript", "Figma", "GitHub Pages"],
     github: "https://github.com/Vlaarsan/Site-PSPE",
     lien: "https://vlaar93.github.io/Site_Sid",
@@ -866,7 +734,7 @@ export const experiences: Experience[] = [
       "Montée en compétence continue sur les outils et conventions internes (CI/CD, tests automatisés, architecture modulaire)"
     ],
     technologies: ["React Native", "TypeScript", "Redux", "Jest", "Git", "CI/CD"],
-    competencesAcquises: ["react-native", "typescript", "rigueur", "collaboration", "communication", "adaptabilite"],
+    competencesAcquises: ["react-native", "typescript", "rigueur", "communication"],
     resultats: "Une intégration réussie dans une équipe professionnelle, avec une montée en compétence rapide sur les spécificités du développement pour la télévision connectée, un domaine que je ne connaissais pas avant d'y être confronté. Cette expérience m'a permis d'appliquer à grande échelle des compétences jusque-là développées sur des projets personnels bien plus modestes.",
     anecdote: "Le plus grand choc culturel à mon arrivée n'a pas été technique mais méthodologique : je découvrais pour la première fois un vrai processus de revue de code systématique, avec des standards d'équipe stricts. Les premières semaines, chaque pull request revenait avec de nombreux commentaires. Plutôt que de le vivre comme une critique, j'ai choisi d'y voir un accélérateur d'apprentissage : quelques mois plus tard, mes revues de code étaient nettement plus courtes, et je me retrouve aujourd'hui à mon tour à commenter le code d'autres alternants.",
     icon: "fab fa-react",
@@ -915,7 +783,7 @@ export const experiences: Experience[] = [
       "Déploiement du site et formation du client à son usage courant"
     ],
     technologies: ["HTML5", "CSS3", "Tailwind CSS", "JavaScript", "Figma"],
-    competencesAcquises: ["html-css", "communication", "autonomie", "rigueur"],
+    competencesAcquises: ["communication", "autonomie", "rigueur"],
     resultats: "Un site livré dans les délais convenus, toujours en ligne depuis 2022, avec un client satisfait du résultat final. Cette mission m'a appris à gérer une relation client de bout en bout, bien au-delà des seuls aspects techniques du développement.",
     anecdote: "Gérer directement la relation avec un client, sans intermédiaire ni cahier des charges figé au départ, a été un vrai apprentissage. Le client changeait parfois d'avis sur certains choix visuels en cours de route : j'ai appris à cadrer les échanges avec des maquettes validées par écrit à chaque étape, pour éviter les allers-retours sans fin et respecter mes délais.",
     icon: "fas fa-globe",
@@ -924,6 +792,32 @@ export const experiences: Experience[] = [
 ];
 
 export const formations: Formation[] = [
+  {
+    id: "iscod-expert-ingenierie",
+    titre: "Expert en Ingénierie du Logiciel",
+    etablissement: "ISCOD",
+    periode: "2024 - 2026",
+    dateDebut: "2024-09",
+    niveau: "Bac +5 / Niveau 7 (RNCP)",
+    lieu: "Formation à distance (France)",
+    logo: "https://www.google.com/s2/favicons?domain=iscod.fr&sz=128",
+    lienEtablissement: "https://www.iscod.fr",
+    resume: "Formation diplômante de niveau Bac+5, suivie à distance en alternance avec mon poste de développeur React Native chez TF1, dont ce portfolio est l'un des livrables de certification.",
+    contexte: "Après mon diplôme de Concepteur Développeur d'Applications (Bac+3), j'ai voulu poursuivre vers un niveau d'ingénierie logicielle plus complet, qui dépasse la seule maîtrise technique pour englober l'architecture, la gestion de projet et la qualité logicielle à grande échelle. L'ISCOD propose cette formation entièrement à distance, ce qui me permet de la suivre en parallèle de mon alternance chez TF1 : les enseignements théoriques et les livrables de certification, comme ce portfolio, viennent directement s'appuyer sur les projets et les responsabilités que j'exerce concrètement en entreprise.",
+    programme: [
+      "Architecture logicielle et conception de systèmes complexes",
+      "Gestion de projet informatique et méthodologies agiles",
+      "Qualité logicielle, tests et sécurité applicative",
+      "Management technique et accompagnement d'équipe",
+      "Veille technologique et innovation",
+      "Réalisation et soutenance d'un portfolio professionnel de compétences"
+    ],
+    competencesAcquises: ["react-native", "git", "rigueur", "autonomie", "communication"],
+    resultats: "Formation actuellement en cours, dont ce portfolio constitue l'un des livrables d'évaluation. Elle me permet de prendre du recul sur mon expérience chez TF1 en la reliant à un cadre méthodologique plus large que la seule pratique quotidienne du code.",
+    anecdote: "Concilier une formation exigeante à distance avec une alternance à temps plein n'est pas toujours simple : il faut apprendre à découper son temps entre les livraisons attendues par TF1 et les rendus demandés par l'ISCOD, sans que l'un ne prenne le pas sur l'autre. Construire ce portfolio a été un exercice révélateur à ce titre : il m'a obligé à prendre du recul sur des mois de travail chez TF1 pour les mettre en mots et en perspective, un exercice de synthèse que le rythme du quotidien professionnel laisse rarement le temps de faire spontanément.",
+    icon: "fas fa-graduation-cap",
+    color: "from-emerald-500 to-teal-600",
+  },
   {
     id: "animation-3d",
     titre: "Production Vidéo & Animation 3D",
@@ -1012,7 +906,7 @@ export const formations: Formation[] = [
       "Bases de React.js pour la construction d'interfaces web",
       "Bonnes pratiques de référencement naturel (SEO) et d'accessibilité"
     ],
-    competencesAcquises: ["html-css", "javascript", "react"],
+    competencesAcquises: ["javascript"],
     resultats: "Réalisation et livraison du site vitrine de l'entreprise PSPE dans le cadre d'une mission freelance, démontrant une maîtrise opérationnelle de ces technologies au-delà de simples exercices d'apprentissage.",
     anecdote: "Apprendre le web en autodidacte juste avant de le mettre en pratique sur une vraie mission client m'a forcé à être extrêmement efficace dans mes recherches : pas de place pour la théorie superflue, chaque notion apprise devait immédiatement servir à avancer sur le site du client.",
     icon: "fas fa-laptop-code",
